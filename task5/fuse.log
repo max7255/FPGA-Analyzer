@@ -1,0 +1,15 @@
+Running: D:\Xilinx\11.1\ISE\bin\nt\unwrapped\fuse.exe -ise D:/lvk/task5/task5.ise -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o D:/lvk/task5/test_task5_isim_beh.exe -prj D:/lvk/task5/test_task5_beh.prj test_task5 glbl 
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/lvk/task5/task5.v" into library work
+Analyzing Verilog file "D:/lvk/task5/test_task5.v" into library work
+Analyzing Verilog file "D:/Xilinx/11.1/ISE/verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 118208 KB
+Fuse CPU Usage: 639 ms
+Compiling module clock
+Compiling module task5
+Compiling module test_task5
+FATAL_ERROR:Simulator:CompilerAssert.h:40:1.47 - Internal Compiler Error in file ../src/VlogConcStmt.cpp at line 973   Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.

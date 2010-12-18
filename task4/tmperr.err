@@ -1,0 +1,4 @@
+ERROR:Cpld:837 - Insufficient number of macrocells. The design needs at least
+   147 but only 144 left after allocating other resources.
+ERROR:Cpld:868 - Cannot fit the design into any of the specified devices with
+   the selected implementation options.

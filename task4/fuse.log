@@ -1,0 +1,22 @@
+Running: D:\Xilinx\11.1\ISE\bin\nt\unwrapped\fuse.exe -ise D:/lvk/task4/task4.ise -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/lvk/task4/test_task4_isim_beh.exe -prj D:/lvk/task4/test_task4_beh.prj test_task4 glbl 
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/lvk/task4/task4.v" into library work
+Analyzing Verilog file "D:/lvk/task4/test_task4.v" into library work
+Analyzing Verilog file "D:/Xilinx/11.1/ISE/verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/lvk/task4/test_task4.v" Line 56: Size mismatch in connection of port <MISO>. Formal port size is 32-bit while actual signal size is 1-bit.
+Completed static elaboration
+Fuse Memory Usage: 117824 KB
+Fuse CPU Usage: 607 ms
+Compiling module clock
+Compiling module task4
+Compiling module test_task4
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable D:/lvk/task4/test_task4_isim_beh.exe
+Fuse Memory Usage: 119936 KB
+Fuse CPU Usage: 1013 ms

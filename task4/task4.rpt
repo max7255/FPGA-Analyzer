@@ -1,0 +1,1889 @@
+ 
+cpldfit:  version L.33                              Xilinx Inc.
+                                  No Fit Report
+Design Name: task4                               Date: 12- 8-2010, 10:55AM
+Device Used: XA95144XL-15-CS144
+Fitting Status: Design Rule Checking Failed
+
+**************************  Errors and Warnings  ***************************
+
+ERROR:Cpld:837 - Insufficient number of macrocells. The design needs at least
+   147 but only 144 left after allocating other resources.
+ERROR:Cpld:868 - Cannot fit the design into any of the specified devices with
+   the selected implementation options.
+*************************  Mapped Resource Summary  **************************
+
+No logic has been mapped.
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+0  /144 (  0%) 0   /720  (  0%) 0  /432 (  0%)   0  /144 (  0%) 0  /117 (  0%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           0/18        0/54        0/90       0/15
+FB2           0/18        0/54        0/90       0/15
+FB3           0/18        0/54        0/90       0/15
+FB4           0/18        0/54        0/90       0/15
+FB5           0/18        0/54        0/90       0/14
+FB6           0/18        0/54        0/90       0/13
+FB7           0/18        0/54        0/90       0/15
+FB8           0/18        0/54        0/90       0/15
+             -----       -----       -----      -----    
+              0/144       0/432       0/720      0/117
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   64           0    |  I/O              :     0     109
+Output        :   32           0    |  GCK/IO           :     0       3
+Bidirectional :    0           0    |  GTS/IO           :     0       4
+GCK           :    1           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     97           0
+
+End of Mapped Resource Summary
+*************************  Summary of UnMapped Logic  ************************
+
+** 32 Outputs **
+
+Signal                                                                               Total Total User
+Name                                                                                 Pts   Inps  Assignment
+MISO<9>                                                                              0     0     
+MISO<8>                                                                              0     0     
+MISO<7>                                                                              0     0     
+MISO<28>                                                                             0     0     
+MISO<27>                                                                             0     0     
+MISO<26>                                                                             0     0     
+MISO<25>                                                                             0     0     
+MISO<24>                                                                             0     0     
+MISO<23>                                                                             0     0     
+MISO<22>                                                                             0     0     
+MISO<21>                                                                             0     0     
+MISO<20>                                                                             0     0     
+MISO<1>                                                                              0     0     
+MISO<6>                                                                              0     0     
+MISO<19>                                                                             0     0     
+MISO<18>                                                                             0     0     
+MISO<17>                                                                             0     0     
+MISO<16>                                                                             0     0     
+MISO<15>                                                                             0     0     
+MISO<14>                                                                             0     0     
+MISO<13>                                                                             0     0     
+MISO<12>                                                                             0     0     
+MISO<11>                                                                             0     0     
+MISO<10>                                                                             0     0     
+MISO<5>                                                                              0     0     
+MISO<4>                                                                              0     0     
+MISO<3>                                                                              0     0     
+MISO<31>                                                                             0     0     
+MISO<30>                                                                             0     0     
+MISO<2>                                                                              0     0     
+MISO<29>                                                                             0     0     
+MISO<0>                                                                              10    89    
+
+** 115 Buried Nodes **
+
+Signal                                                                               Total Total User
+Name                                                                                 Pts   Inps  Assignment
+$OpTx$FX_DC$59                                                                       2     3     
+$OpTx$FX_DC$60                                                                       2     3     
+$OpTx$FX_DC$75                                                                       2     3     
+$OpTx$FX_DC$76                                                                       2     3     
+$OpTx$FX_DC$77                                                                       2     3     
+$OpTx$FX_DC$78                                                                       2     3     
+$OpTx$FX_DC$79                                                                       2     3     
+$OpTx$FX_DC$80                                                                       2     3     
+Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D  2     3     
+Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D  2     3     
+Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D  2     3     
+count<0>                                                                             2     37    
+count<1>                                                                             4     38    
+count<2>                                                                             5     39    
+count<3>                                                                             6     40    
+count<4>                                                                             7     41    
+count<5>                                                                             8     42    
+count<6>                                                                             9     43    
+count<7>                                                                             10    44    
+count<8>                                                                             11    45    
+count<9>                                                                             12    46    
+
+Signal                                                                               Total Total User
+Name                                                                                 Pts   Inps  Assignment
+count<10>                                                                            13    47    
+count<11>                                                                            14    48    
+count<12>                                                                            15    49    
+count<13>                                                                            16    50    
+count<14>                                                                            17    51    
+count<15>                                                                            18    52    
+count<16>                                                                            19    53    
+datastate<0>                                                                         3     36    
+datastate<1>                                                                         3     36    
+datastate<2>                                                                         2     36    
+mask<0>                                                                              2     36    
+mask<1>                                                                              2     36    
+mask<2>                                                                              2     36    
+mask<3>                                                                              2     36    
+mask<4>                                                                              2     36    
+mask<5>                                                                              2     36    
+mask<6>                                                                              2     36    
+mask<7>                                                                              2     36    
+mask<8>                                                                              2     36    
+mask<9>                                                                              2     36    
+mask<10>                                                                             2     36    
+mask<11>                                                                             2     36    
+mask<12>                                                                             2     36    
+mask<13>                                                                             2     36    
+mask<14>                                                                             2     36    
+mask<15>                                                                             2     36    
+mask<16>                                                                             2     36    
+mask<17>                                                                             2     36    
+mask<18>                                                                             2     36    
+mask<19>                                                                             2     36    
+mask<20>                                                                             2     36    
+mask<21>                                                                             2     36    
+mask<22>                                                                             2     36    
+mask<23>                                                                             2     36    
+mask<24>                                                                             2     36    
+mask<25>                                                                             2     36    
+mask<26>                                                                             2     36    
+mask<27>                                                                             2     36    
+mask<28>                                                                             2     36    
+mask<29>                                                                             2     36    
+
+Signal                                                                               Total Total User
+Name                                                                                 Pts   Inps  Assignment
+mask<30>                                                                             2     36    
+mask<31>                                                                             2     36    
+pattern<0>                                                                           2     36    
+pattern<1>                                                                           2     36    
+pattern<2>                                                                           2     36    
+pattern<3>                                                                           2     36    
+pattern<4>                                                                           2     36    
+pattern<5>                                                                           2     36    
+pattern<6>                                                                           2     36    
+pattern<7>                                                                           2     36    
+pattern<8>                                                                           2     36    
+pattern<9>                                                                           2     36    
+pattern<10>                                                                          2     36    
+pattern<11>                                                                          2     36    
+pattern<12>                                                                          2     36    
+pattern<13>                                                                          2     36    
+pattern<14>                                                                          2     36    
+pattern<15>                                                                          2     36    
+pattern<16>                                                                          2     36    
+pattern<17>                                                                          2     36    
+pattern<18>                                                                          2     36    
+pattern<19>                                                                          2     36    
+pattern<20>                                                                          2     36    
+pattern<21>                                                                          2     36    
+pattern<22>                                                                          2     36    
+pattern<23>                                                                          2     36    
+pattern<24>                                                                          2     36    
+pattern<25>                                                                          2     36    
+pattern<26>                                                                          2     36    
+pattern<27>                                                                          2     36    
+pattern<28>                                                                          2     36    
+pattern<29>                                                                          2     36    
+pattern<30>                                                                          2     36    
+pattern<31>                                                                          2     36    
+start                                                                                2     36    
+
+** 65 Inputs **
+
+Signal                                                                               User
+Name                                                                                 Assignment
+MOSI<0>                                                                              
+MOSI<10>                                                                             
+MOSI<11>                                                                             
+MOSI<12>                                                                             
+MOSI<13>                                                                             
+MOSI<14>                                                                             
+MOSI<15>                                                                             
+MOSI<16>                                                                             
+MOSI<17>                                                                             
+MOSI<18>                                                                             
+MOSI<19>                                                                             
+MOSI<1>                                                                              
+MOSI<20>                                                                             
+MOSI<21>                                                                             
+MOSI<22>                                                                             
+MOSI<23>                                                                             
+MOSI<24>                                                                             
+MOSI<25>                                                                             
+MOSI<26>                                                                             
+MOSI<27>                                                                             
+MOSI<28>                                                                             
+MOSI<29>                                                                             
+MOSI<2>                                                                              
+MOSI<30>                                                                             
+MOSI<31>                                                                             
+MOSI<3>                                                                              
+MOSI<4>                                                                              
+MOSI<5>                                                                              
+MOSI<6>                                                                              
+MOSI<7>                                                                              
+MOSI<8>                                                                              
+MOSI<9>                                                                              
+SCLK                                                                                 
+SS<0>                                                                                
+SS<10>                                                                               
+SS<11>                                                                               
+SS<12>                                                                               
+SS<13>                                                                               
+SS<14>                                                                               
+SS<15>                                                                               
+
+Signal                                                                               User
+Name                                                                                 Assignment
+SS<16>                                                                               
+SS<17>                                                                               
+SS<18>                                                                               
+SS<19>                                                                               
+SS<1>                                                                                
+SS<20>                                                                               
+SS<21>                                                                               
+SS<22>                                                                               
+SS<23>                                                                               
+SS<24>                                                                               
+SS<25>                                                                               
+SS<26>                                                                               
+SS<27>                                                                               
+SS<28>                                                                               
+SS<29>                                                                               
+SS<2>                                                                                
+SS<30>                                                                               
+SS<31>                                                                               
+SS<3>                                                                                
+SS<4>                                                                                
+SS<5>                                                                                
+SS<6>                                                                                
+SS<7>                                                                                
+SS<8>                                                                                
+SS<9>                                                                                
+
+*******************************  Equations  ********************************
+
+********** UnMapped Logic **********
+
+** Outputs **
+
+FDCPE_MISO0: FDCPE port map (MISO(0),MISO_D(0),SCLK,'0','0',MISO_CE(0));
+MISO_D(0) <= ((count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND NOT MOSI(28) AND 
+	NOT MOSI(6) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78)
+	OR (count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND NOT mask(28) AND 
+	NOT pattern(28) AND NOT MOSI(6) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78)
+	OR (count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND NOT mask(6) AND 
+	NOT pattern(6) AND NOT MOSI(28) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78)
+	OR (count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND mask(28) AND 
+	pattern(28) AND MOSI(28) AND NOT MOSI(6) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78)
+	OR (count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND mask(6) AND 
+	pattern(6) AND NOT MOSI(28) AND MOSI(6) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78)
+	OR (count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND NOT mask(28) AND 
+	NOT mask(6) AND NOT pattern(28) AND NOT pattern(6) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78)
+	OR (count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND NOT mask(28) AND 
+	mask(6) AND NOT pattern(28) AND pattern(6) AND MOSI(6) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78)
+	OR (count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND mask(28) AND 
+	NOT mask(6) AND pattern(28) AND NOT pattern(6) AND MOSI(28) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78)
+	OR (count(0) AND NOT count(10) AND NOT count(11) AND NOT count(12) AND 
+	NOT count(13) AND NOT count(14) AND NOT count(15) AND NOT count(1) AND NOT count(2) AND 
+	NOT count(3) AND NOT count(4) AND NOT count(5) AND NOT count(6) AND NOT count(7) AND 
+	NOT count(8) AND NOT count(9) AND NOT count(16) AND start AND mask(28) AND 
+	mask(6) AND pattern(28) AND pattern(6) AND MOSI(28) AND MOSI(6) AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D AND $OpTx$FX_DC$75 AND $OpTx$FX_DC$76 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D AND $OpTx$FX_DC$59 AND $OpTx$FX_DC$60 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D AND $OpTx$FX_DC$79 AND $OpTx$FX_DC$80 AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D AND 
+	NOT Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D AND $OpTx$FX_DC$77 AND $OpTx$FX_DC$78));
+MISO_CE(0) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+
+MISO(1) <= '0';
+
+
+MISO(2) <= '0';
+
+
+MISO(3) <= '0';
+
+
+MISO(4) <= '0';
+
+
+MISO(5) <= '0';
+
+
+MISO(6) <= '0';
+
+
+MISO(7) <= '0';
+
+
+MISO(8) <= '0';
+
+
+MISO(9) <= '0';
+
+
+MISO(10) <= '0';
+
+
+MISO(11) <= '0';
+
+
+MISO(12) <= '0';
+
+
+MISO(13) <= '0';
+
+
+MISO(14) <= '0';
+
+
+MISO(15) <= '0';
+
+
+MISO(16) <= '0';
+
+
+MISO(17) <= '0';
+
+
+MISO(18) <= '0';
+
+
+MISO(19) <= '0';
+
+
+MISO(20) <= '0';
+
+
+MISO(21) <= '0';
+
+
+MISO(22) <= '0';
+
+
+MISO(23) <= '0';
+
+
+MISO(24) <= '0';
+
+
+MISO(25) <= '0';
+
+
+MISO(26) <= '0';
+
+
+MISO(27) <= '0';
+
+
+MISO(28) <= '0';
+
+
+MISO(29) <= '0';
+
+
+MISO(30) <= '0';
+
+
+MISO(31) <= '0';
+
+** Buried Nodes **
+
+
+$OpTx$FX_DC$59 <= NOT ((pattern(24) AND MOSI(24))
+	 XOR 
+$OpTx$FX_DC$59 <= NOT ((mask(24) AND MOSI(24)));
+
+
+$OpTx$FX_DC$60 <= NOT ((pattern(25) AND MOSI(25))
+	 XOR 
+$OpTx$FX_DC$60 <= NOT ((mask(25) AND MOSI(25)));
+
+
+$OpTx$FX_DC$75 <= NOT ((pattern(16) AND MOSI(16))
+	 XOR 
+$OpTx$FX_DC$75 <= NOT ((mask(16) AND MOSI(16)));
+
+
+$OpTx$FX_DC$76 <= NOT ((pattern(17) AND MOSI(17))
+	 XOR 
+$OpTx$FX_DC$76 <= NOT ((mask(17) AND MOSI(17)));
+
+
+$OpTx$FX_DC$77 <= NOT ((pattern(0) AND MOSI(0))
+	 XOR 
+$OpTx$FX_DC$77 <= NOT ((mask(0) AND MOSI(0)));
+
+
+$OpTx$FX_DC$78 <= NOT ((pattern(1) AND MOSI(1))
+	 XOR 
+$OpTx$FX_DC$78 <= NOT ((mask(1) AND MOSI(1)));
+
+
+$OpTx$FX_DC$79 <= NOT ((pattern(8) AND MOSI(8))
+	 XOR 
+$OpTx$FX_DC$79 <= NOT ((mask(8) AND MOSI(8)));
+
+
+$OpTx$FX_DC$80 <= NOT ((pattern(9) AND MOSI(9))
+	 XOR 
+$OpTx$FX_DC$80 <= NOT ((mask(9) AND MOSI(9)));
+
+
+Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D <= (pattern(2) AND MOSI(2))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0001_xor0000/Mcompar_switch_cmp_eq0001_or0001_xor0000_D <= (mask(2) AND MOSI(2));
+
+
+Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D <= (pattern(3) AND MOSI(3))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0001_xor0001/Mcompar_switch_cmp_eq0001_or0001_xor0001_D <= (mask(3) AND MOSI(3));
+
+
+Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D <= (pattern(4) AND MOSI(4))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0002_xor0000/Mcompar_switch_cmp_eq0001_or0002_xor0000_D <= (mask(4) AND MOSI(4));
+
+
+Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D <= (pattern(5) AND MOSI(5))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0002_xor0001/Mcompar_switch_cmp_eq0001_or0002_xor0001_D <= (mask(5) AND MOSI(5));
+
+
+Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D <= (pattern(7) AND MOSI(7))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0003_xor0001/Mcompar_switch_cmp_eq0001_or0003_xor0001_D <= (mask(7) AND MOSI(7));
+
+
+Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D <= (pattern(10) AND MOSI(10))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0005_xor0000/Mcompar_switch_cmp_eq0001_or0005_xor0000_D <= (mask(10) AND MOSI(10));
+
+
+Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D <= (pattern(11) AND MOSI(11))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0005_xor0001/Mcompar_switch_cmp_eq0001_or0005_xor0001_D <= (mask(11) AND MOSI(11));
+
+
+Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D <= (pattern(12) AND MOSI(12))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0006_xor0000/Mcompar_switch_cmp_eq0001_or0006_xor0000_D <= (mask(12) AND MOSI(12));
+
+
+Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D <= (pattern(13) AND MOSI(13))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0006_xor0001/Mcompar_switch_cmp_eq0001_or0006_xor0001_D <= (mask(13) AND MOSI(13));
+
+
+Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D <= (pattern(14) AND MOSI(14))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0007_xor0000/Mcompar_switch_cmp_eq0001_or0007_xor0000_D <= (mask(14) AND MOSI(14));
+
+
+Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D <= (pattern(15) AND MOSI(15))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0007_xor0001/Mcompar_switch_cmp_eq0001_or0007_xor0001_D <= (mask(15) AND MOSI(15));
+
+
+Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D <= (pattern(18) AND MOSI(18))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0009_xor0000/Mcompar_switch_cmp_eq0001_or0009_xor0000_D <= (mask(18) AND MOSI(18));
+
+
+Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D <= (pattern(19) AND MOSI(19))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0009_xor0001/Mcompar_switch_cmp_eq0001_or0009_xor0001_D <= (mask(19) AND MOSI(19));
+
+
+Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D <= (pattern(20) AND MOSI(20))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0010_xor0000/Mcompar_switch_cmp_eq0001_or0010_xor0000_D <= (mask(20) AND MOSI(20));
+
+
+Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D <= (pattern(21) AND MOSI(21))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0010_xor0001/Mcompar_switch_cmp_eq0001_or0010_xor0001_D <= (mask(21) AND MOSI(21));
+
+
+Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D <= (pattern(22) AND MOSI(22))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0011_xor0000/Mcompar_switch_cmp_eq0001_or0011_xor0000_D <= (mask(22) AND MOSI(22));
+
+
+Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D <= (pattern(23) AND MOSI(23))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0011_xor0001/Mcompar_switch_cmp_eq0001_or0011_xor0001_D <= (mask(23) AND MOSI(23));
+
+
+Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D <= (pattern(26) AND MOSI(26))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0013_xor0000/Mcompar_switch_cmp_eq0001_or0013_xor0000_D <= (mask(26) AND MOSI(26));
+
+
+Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D <= (pattern(27) AND MOSI(27))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0013_xor0001/Mcompar_switch_cmp_eq0001_or0013_xor0001_D <= (mask(27) AND MOSI(27));
+
+
+Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D <= (pattern(29) AND MOSI(29))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0014_xor0001/Mcompar_switch_cmp_eq0001_or0014_xor0001_D <= (mask(29) AND MOSI(29));
+
+
+Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D <= (pattern(30) AND MOSI(30))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0015_xor0000/Mcompar_switch_cmp_eq0001_or0015_xor0000_D <= (mask(30) AND MOSI(30));
+
+
+Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D <= (pattern(31) AND MOSI(31))
+	 XOR 
+Mcompar_switch_cmp_eq0001_or0015_xor0001/Mcompar_switch_cmp_eq0001_or0015_xor0001_D <= (mask(31) AND MOSI(31));
+
+FTCPE_count0: FTCPE port map (count(0),count_T(0),SCLK,'0','0',count_CE(0));
+count_T(0) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT count(0) AND NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND 
+	NOT SS(13) AND NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND 
+	NOT SS(19) AND SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND 
+	NOT SS(24) AND NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND 
+	SS(2) AND NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND 
+	NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND NOT SS(9));
+count_CE(0) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count1: FDCPE port map (count(1),count_D(1),SCLK,'0','0',count_CE(1));
+count_D(1) <= ((count(0) AND count(1))
+	OR (NOT count(0) AND NOT count(1))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(1) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count2: FDCPE port map (count(2),count_D(2),SCLK,'0','0',count_CE(2));
+count_D(2) <= ((NOT count(0) AND NOT count(2))
+	OR (NOT count(1) AND NOT count(2))
+	OR (count(0) AND count(1) AND count(2))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(2) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count3: FDCPE port map (count(3),count_D(3),SCLK,'0','0',count_CE(3));
+count_D(3) <= ((NOT count(0) AND NOT count(3))
+	OR (NOT count(1) AND NOT count(3))
+	OR (NOT count(2) AND NOT count(3))
+	OR (count(0) AND count(1) AND count(2) AND count(3))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(3) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count4: FDCPE port map (count(4),count_D(4),SCLK,'0','0',count_CE(4));
+count_D(4) <= ((NOT count(0) AND NOT count(4))
+	OR (NOT count(1) AND NOT count(4))
+	OR (NOT count(2) AND NOT count(4))
+	OR (NOT count(3) AND NOT count(4))
+	OR (count(0) AND count(1) AND count(2) AND count(3) AND 
+	count(4))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(4) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count5: FDCPE port map (count(5),count_D(5),SCLK,'0','0',count_CE(5));
+count_D(5) <= ((NOT count(0) AND NOT count(5))
+	OR (NOT count(1) AND NOT count(5))
+	OR (NOT count(2) AND NOT count(5))
+	OR (NOT count(3) AND NOT count(5))
+	OR (NOT count(4) AND NOT count(5))
+	OR (count(0) AND count(1) AND count(2) AND count(3) AND 
+	count(4) AND count(5))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(5) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count6: FDCPE port map (count(6),count_D(6),SCLK,'0','0',count_CE(6));
+count_D(6) <= ((NOT count(0) AND NOT count(6))
+	OR (NOT count(1) AND NOT count(6))
+	OR (NOT count(2) AND NOT count(6))
+	OR (NOT count(3) AND NOT count(6))
+	OR (NOT count(4) AND NOT count(6))
+	OR (NOT count(5) AND NOT count(6))
+	OR (count(0) AND count(1) AND count(2) AND count(3) AND 
+	count(4) AND count(5) AND count(6))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(6) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count7: FDCPE port map (count(7),count_D(7),SCLK,'0','0',count_CE(7));
+count_D(7) <= ((NOT count(0) AND NOT count(7))
+	OR (NOT count(1) AND NOT count(7))
+	OR (NOT count(2) AND NOT count(7))
+	OR (NOT count(3) AND NOT count(7))
+	OR (NOT count(4) AND NOT count(7))
+	OR (NOT count(5) AND NOT count(7))
+	OR (NOT count(6) AND NOT count(7))
+	OR (count(0) AND count(1) AND count(2) AND count(3) AND 
+	count(4) AND count(5) AND count(6) AND count(7))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(7) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count8: FDCPE port map (count(8),count_D(8),SCLK,'0','0',count_CE(8));
+count_D(8) <= ((NOT count(0) AND NOT count(8))
+	OR (NOT count(1) AND NOT count(8))
+	OR (NOT count(2) AND NOT count(8))
+	OR (NOT count(3) AND NOT count(8))
+	OR (NOT count(4) AND NOT count(8))
+	OR (NOT count(5) AND NOT count(8))
+	OR (NOT count(6) AND NOT count(8))
+	OR (NOT count(7) AND NOT count(8))
+	OR (count(0) AND count(1) AND count(2) AND count(3) AND 
+	count(4) AND count(5) AND count(6) AND count(7) AND count(8))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(8) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count9: FDCPE port map (count(9),count_D(9),SCLK,'0','0',count_CE(9));
+count_D(9) <= ((NOT count(0) AND NOT count(9))
+	OR (NOT count(1) AND NOT count(9))
+	OR (NOT count(2) AND NOT count(9))
+	OR (NOT count(3) AND NOT count(9))
+	OR (NOT count(4) AND NOT count(9))
+	OR (NOT count(5) AND NOT count(9))
+	OR (NOT count(6) AND NOT count(9))
+	OR (NOT count(7) AND NOT count(9))
+	OR (NOT count(8) AND NOT count(9))
+	OR (count(0) AND count(1) AND count(2) AND count(3) AND 
+	count(4) AND count(5) AND count(6) AND count(7) AND count(8) AND 
+	count(9))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(9) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count10: FDCPE port map (count(10),count_D(10),SCLK,'0','0',count_CE(10));
+count_D(10) <= ((NOT count(10) AND NOT count(9))
+	OR (NOT count(0) AND NOT count(10))
+	OR (NOT count(10) AND NOT count(1))
+	OR (NOT count(10) AND NOT count(2))
+	OR (NOT count(10) AND NOT count(3))
+	OR (NOT count(10) AND NOT count(4))
+	OR (NOT count(10) AND NOT count(5))
+	OR (NOT count(10) AND NOT count(6))
+	OR (NOT count(10) AND NOT count(7))
+	OR (NOT count(10) AND NOT count(8))
+	OR (count(0) AND count(10) AND count(1) AND count(2) AND 
+	count(3) AND count(4) AND count(5) AND count(6) AND count(7) AND 
+	count(8) AND count(9))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(10) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count11: FDCPE port map (count(11),count_D(11),SCLK,'0','0',count_CE(11));
+count_D(11) <= ((NOT count(11) AND NOT count(9))
+	OR (NOT count(10) AND NOT count(11))
+	OR (NOT count(0) AND NOT count(11))
+	OR (NOT count(11) AND NOT count(1))
+	OR (NOT count(11) AND NOT count(2))
+	OR (NOT count(11) AND NOT count(3))
+	OR (NOT count(11) AND NOT count(4))
+	OR (NOT count(11) AND NOT count(5))
+	OR (NOT count(11) AND NOT count(6))
+	OR (NOT count(11) AND NOT count(7))
+	OR (NOT count(11) AND NOT count(8))
+	OR (count(0) AND count(10) AND count(11) AND count(1) AND 
+	count(2) AND count(3) AND count(4) AND count(5) AND count(6) AND 
+	count(7) AND count(8) AND count(9))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(11) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count12: FDCPE port map (count(12),count_D(12),SCLK,'0','0',count_CE(12));
+count_D(12) <= ((NOT count(12) AND NOT count(9))
+	OR (NOT count(10) AND NOT count(12))
+	OR (NOT count(11) AND NOT count(12))
+	OR (NOT count(0) AND NOT count(12))
+	OR (NOT count(12) AND NOT count(1))
+	OR (NOT count(12) AND NOT count(2))
+	OR (NOT count(12) AND NOT count(3))
+	OR (NOT count(12) AND NOT count(4))
+	OR (NOT count(12) AND NOT count(5))
+	OR (NOT count(12) AND NOT count(6))
+	OR (NOT count(12) AND NOT count(7))
+	OR (NOT count(12) AND NOT count(8))
+	OR (count(0) AND count(10) AND count(11) AND count(12) AND 
+	count(1) AND count(2) AND count(3) AND count(4) AND count(5) AND 
+	count(6) AND count(7) AND count(8) AND count(9))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(12) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count13: FDCPE port map (count(13),count_D(13),SCLK,'0','0',count_CE(13));
+count_D(13) <= ((NOT count(13) AND NOT count(9))
+	OR (NOT count(10) AND NOT count(13))
+	OR (NOT count(11) AND NOT count(13))
+	OR (NOT count(12) AND NOT count(13))
+	OR (NOT count(0) AND NOT count(13))
+	OR (NOT count(13) AND NOT count(1))
+	OR (NOT count(13) AND NOT count(2))
+	OR (NOT count(13) AND NOT count(3))
+	OR (NOT count(13) AND NOT count(4))
+	OR (NOT count(13) AND NOT count(5))
+	OR (NOT count(13) AND NOT count(6))
+	OR (NOT count(13) AND NOT count(7))
+	OR (NOT count(13) AND NOT count(8))
+	OR (count(0) AND count(10) AND count(11) AND count(12) AND 
+	count(13) AND count(1) AND count(2) AND count(3) AND count(4) AND 
+	count(5) AND count(6) AND count(7) AND count(8) AND count(9))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(13) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count14: FDCPE port map (count(14),count_D(14),SCLK,'0','0',count_CE(14));
+count_D(14) <= ((NOT count(14) AND NOT count(9))
+	OR (NOT count(10) AND NOT count(14))
+	OR (NOT count(11) AND NOT count(14))
+	OR (NOT count(12) AND NOT count(14))
+	OR (NOT count(13) AND NOT count(14))
+	OR (NOT count(0) AND NOT count(14))
+	OR (NOT count(14) AND NOT count(1))
+	OR (NOT count(14) AND NOT count(2))
+	OR (NOT count(14) AND NOT count(3))
+	OR (NOT count(14) AND NOT count(4))
+	OR (NOT count(14) AND NOT count(5))
+	OR (NOT count(14) AND NOT count(6))
+	OR (NOT count(14) AND NOT count(7))
+	OR (NOT count(14) AND NOT count(8))
+	OR (count(0) AND count(10) AND count(11) AND count(12) AND 
+	count(13) AND count(14) AND count(1) AND count(2) AND count(3) AND 
+	count(4) AND count(5) AND count(6) AND count(7) AND count(8) AND 
+	count(9))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(14) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count15: FDCPE port map (count(15),count_D(15),SCLK,'0','0',count_CE(15));
+count_D(15) <= ((NOT count(15) AND NOT count(9))
+	OR (NOT count(10) AND NOT count(15))
+	OR (NOT count(11) AND NOT count(15))
+	OR (NOT count(12) AND NOT count(15))
+	OR (NOT count(13) AND NOT count(15))
+	OR (NOT count(14) AND NOT count(15))
+	OR (NOT count(0) AND NOT count(15))
+	OR (NOT count(15) AND NOT count(1))
+	OR (NOT count(15) AND NOT count(2))
+	OR (NOT count(15) AND NOT count(3))
+	OR (NOT count(15) AND NOT count(4))
+	OR (NOT count(15) AND NOT count(5))
+	OR (NOT count(15) AND NOT count(6))
+	OR (NOT count(15) AND NOT count(7))
+	OR (NOT count(15) AND NOT count(8))
+	OR (count(0) AND count(10) AND count(11) AND count(12) AND 
+	count(13) AND count(14) AND count(15) AND count(1) AND count(2) AND 
+	count(3) AND count(4) AND count(5) AND count(6) AND count(7) AND 
+	count(8) AND count(9))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(15) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_count16: FDCPE port map (count(16),count_D(16),SCLK,'0','0',count_CE(16));
+count_D(16) <= ((NOT count(9) AND NOT count(16))
+	OR (NOT count(10) AND NOT count(16))
+	OR (NOT count(11) AND NOT count(16))
+	OR (NOT count(12) AND NOT count(16))
+	OR (NOT count(13) AND NOT count(16))
+	OR (NOT count(14) AND NOT count(16))
+	OR (NOT count(15) AND NOT count(16))
+	OR (NOT count(0) AND NOT count(16))
+	OR (NOT count(1) AND NOT count(16))
+	OR (NOT count(2) AND NOT count(16))
+	OR (NOT count(3) AND NOT count(16))
+	OR (NOT count(4) AND NOT count(16))
+	OR (NOT count(5) AND NOT count(16))
+	OR (NOT count(6) AND NOT count(16))
+	OR (NOT count(7) AND NOT count(16))
+	OR (NOT count(8) AND NOT count(16))
+	OR (count(0) AND count(10) AND count(11) AND count(12) AND 
+	count(13) AND count(14) AND count(15) AND count(1) AND count(2) AND 
+	count(3) AND count(4) AND count(5) AND count(6) AND count(7) AND 
+	count(8) AND count(9) AND count(16))
+	OR (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	NOT start AND SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9)));
+count_CE(16) <= (NOT datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_datastate0: FDCPE port map (datastate(0),datastate_D(0),SCLK,'0','0',datastate_CE(0));
+datastate_D(0) <= ((datastate(0) AND datastate(2))
+	OR (NOT datastate(1) AND datastate(2) AND MOSI(0)));
+datastate_CE(0) <= (SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9));
+
+FDCPE_datastate1: FDCPE port map (datastate(1),datastate_D(1),SCLK,'0','0',datastate_CE(1));
+datastate_D(1) <= ((datastate(1) AND datastate(2))
+	OR (NOT datastate(0) AND datastate(2) AND MOSI(1)));
+datastate_CE(1) <= (SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9));
+
+FDCPE_datastate2: FDCPE port map (datastate(2),datastate_D(2),SCLK,'0','0',datastate_CE(2));
+datastate_D(2) <= (NOT datastate(0) AND NOT datastate(1) AND datastate(2) AND 
+	NOT MOSI(2));
+datastate_CE(2) <= (SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND 
+	NOT SS(14) AND NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND 
+	SS(1) AND NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND 
+	NOT SS(25) AND NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND 
+	NOT SS(30) AND NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND 
+	NOT SS(7) AND NOT SS(8) AND NOT SS(9));
+
+FDCPE_mask0: FDCPE port map (mask(0),MOSI(0),SCLK,'0','0',mask_CE(0));
+mask_CE(0) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask1: FDCPE port map (mask(1),MOSI(1),SCLK,'0','0',mask_CE(1));
+mask_CE(1) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask2: FDCPE port map (mask(2),MOSI(2),SCLK,'0','0',mask_CE(2));
+mask_CE(2) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask3: FDCPE port map (mask(3),MOSI(3),SCLK,'0','0',mask_CE(3));
+mask_CE(3) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask4: FDCPE port map (mask(4),MOSI(4),SCLK,'0','0',mask_CE(4));
+mask_CE(4) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask5: FDCPE port map (mask(5),MOSI(5),SCLK,'0','0',mask_CE(5));
+mask_CE(5) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask6: FDCPE port map (mask(6),MOSI(6),SCLK,'0','0',mask_CE(6));
+mask_CE(6) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask7: FDCPE port map (mask(7),MOSI(7),SCLK,'0','0',mask_CE(7));
+mask_CE(7) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask8: FDCPE port map (mask(8),MOSI(8),SCLK,'0','0',mask_CE(8));
+mask_CE(8) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask9: FDCPE port map (mask(9),MOSI(9),SCLK,'0','0',mask_CE(9));
+mask_CE(9) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask10: FDCPE port map (mask(10),MOSI(10),SCLK,'0','0',mask_CE(10));
+mask_CE(10) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask11: FDCPE port map (mask(11),MOSI(11),SCLK,'0','0',mask_CE(11));
+mask_CE(11) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask12: FDCPE port map (mask(12),MOSI(12),SCLK,'0','0',mask_CE(12));
+mask_CE(12) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask13: FDCPE port map (mask(13),MOSI(13),SCLK,'0','0',mask_CE(13));
+mask_CE(13) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask14: FDCPE port map (mask(14),MOSI(14),SCLK,'0','0',mask_CE(14));
+mask_CE(14) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask15: FDCPE port map (mask(15),MOSI(15),SCLK,'0','0',mask_CE(15));
+mask_CE(15) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask16: FDCPE port map (mask(16),MOSI(16),SCLK,'0','0',mask_CE(16));
+mask_CE(16) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask17: FDCPE port map (mask(17),MOSI(17),SCLK,'0','0',mask_CE(17));
+mask_CE(17) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask18: FDCPE port map (mask(18),MOSI(18),SCLK,'0','0',mask_CE(18));
+mask_CE(18) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask19: FDCPE port map (mask(19),MOSI(19),SCLK,'0','0',mask_CE(19));
+mask_CE(19) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask20: FDCPE port map (mask(20),MOSI(20),SCLK,'0','0',mask_CE(20));
+mask_CE(20) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask21: FDCPE port map (mask(21),MOSI(21),SCLK,'0','0',mask_CE(21));
+mask_CE(21) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask22: FDCPE port map (mask(22),MOSI(22),SCLK,'0','0',mask_CE(22));
+mask_CE(22) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask23: FDCPE port map (mask(23),MOSI(23),SCLK,'0','0',mask_CE(23));
+mask_CE(23) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask24: FDCPE port map (mask(24),MOSI(24),SCLK,'0','0',mask_CE(24));
+mask_CE(24) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask25: FDCPE port map (mask(25),MOSI(25),SCLK,'0','0',mask_CE(25));
+mask_CE(25) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask26: FDCPE port map (mask(26),MOSI(26),SCLK,'0','0',mask_CE(26));
+mask_CE(26) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask27: FDCPE port map (mask(27),MOSI(27),SCLK,'0','0',mask_CE(27));
+mask_CE(27) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask28: FDCPE port map (mask(28),MOSI(28),SCLK,'0','0',mask_CE(28));
+mask_CE(28) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask29: FDCPE port map (mask(29),MOSI(29),SCLK,'0','0',mask_CE(29));
+mask_CE(29) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask30: FDCPE port map (mask(30),MOSI(30),SCLK,'0','0',mask_CE(30));
+mask_CE(30) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_mask31: FDCPE port map (mask(31),MOSI(31),SCLK,'0','0',mask_CE(31));
+mask_CE(31) <= (NOT datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern0: FDCPE port map (pattern(0),MOSI(0),SCLK,'0','0',pattern_CE(0));
+pattern_CE(0) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern1: FDCPE port map (pattern(1),MOSI(1),SCLK,'0','0',pattern_CE(1));
+pattern_CE(1) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern2: FDCPE port map (pattern(2),MOSI(2),SCLK,'0','0',pattern_CE(2));
+pattern_CE(2) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern3: FDCPE port map (pattern(3),MOSI(3),SCLK,'0','0',pattern_CE(3));
+pattern_CE(3) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern4: FDCPE port map (pattern(4),MOSI(4),SCLK,'0','0',pattern_CE(4));
+pattern_CE(4) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern5: FDCPE port map (pattern(5),MOSI(5),SCLK,'0','0',pattern_CE(5));
+pattern_CE(5) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern6: FDCPE port map (pattern(6),MOSI(6),SCLK,'0','0',pattern_CE(6));
+pattern_CE(6) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern7: FDCPE port map (pattern(7),MOSI(7),SCLK,'0','0',pattern_CE(7));
+pattern_CE(7) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern8: FDCPE port map (pattern(8),MOSI(8),SCLK,'0','0',pattern_CE(8));
+pattern_CE(8) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern9: FDCPE port map (pattern(9),MOSI(9),SCLK,'0','0',pattern_CE(9));
+pattern_CE(9) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern10: FDCPE port map (pattern(10),MOSI(10),SCLK,'0','0',pattern_CE(10));
+pattern_CE(10) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern11: FDCPE port map (pattern(11),MOSI(11),SCLK,'0','0',pattern_CE(11));
+pattern_CE(11) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern12: FDCPE port map (pattern(12),MOSI(12),SCLK,'0','0',pattern_CE(12));
+pattern_CE(12) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern13: FDCPE port map (pattern(13),MOSI(13),SCLK,'0','0',pattern_CE(13));
+pattern_CE(13) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern14: FDCPE port map (pattern(14),MOSI(14),SCLK,'0','0',pattern_CE(14));
+pattern_CE(14) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern15: FDCPE port map (pattern(15),MOSI(15),SCLK,'0','0',pattern_CE(15));
+pattern_CE(15) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern16: FDCPE port map (pattern(16),MOSI(16),SCLK,'0','0',pattern_CE(16));
+pattern_CE(16) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern17: FDCPE port map (pattern(17),MOSI(17),SCLK,'0','0',pattern_CE(17));
+pattern_CE(17) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern18: FDCPE port map (pattern(18),MOSI(18),SCLK,'0','0',pattern_CE(18));
+pattern_CE(18) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern19: FDCPE port map (pattern(19),MOSI(19),SCLK,'0','0',pattern_CE(19));
+pattern_CE(19) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern20: FDCPE port map (pattern(20),MOSI(20),SCLK,'0','0',pattern_CE(20));
+pattern_CE(20) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern21: FDCPE port map (pattern(21),MOSI(21),SCLK,'0','0',pattern_CE(21));
+pattern_CE(21) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern22: FDCPE port map (pattern(22),MOSI(22),SCLK,'0','0',pattern_CE(22));
+pattern_CE(22) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern23: FDCPE port map (pattern(23),MOSI(23),SCLK,'0','0',pattern_CE(23));
+pattern_CE(23) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern24: FDCPE port map (pattern(24),MOSI(24),SCLK,'0','0',pattern_CE(24));
+pattern_CE(24) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern25: FDCPE port map (pattern(25),MOSI(25),SCLK,'0','0',pattern_CE(25));
+pattern_CE(25) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern26: FDCPE port map (pattern(26),MOSI(26),SCLK,'0','0',pattern_CE(26));
+pattern_CE(26) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern27: FDCPE port map (pattern(27),MOSI(27),SCLK,'0','0',pattern_CE(27));
+pattern_CE(27) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern28: FDCPE port map (pattern(28),MOSI(28),SCLK,'0','0',pattern_CE(28));
+pattern_CE(28) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern29: FDCPE port map (pattern(29),MOSI(29),SCLK,'0','0',pattern_CE(29));
+pattern_CE(29) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern30: FDCPE port map (pattern(30),MOSI(30),SCLK,'0','0',pattern_CE(30));
+pattern_CE(30) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_pattern31: FDCPE port map (pattern(31),MOSI(31),SCLK,'0','0',pattern_CE(31));
+pattern_CE(31) <= (datastate(0) AND datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+FDCPE_start: FDCPE port map (start,MOSI(0),SCLK,'0','0',start_CE);
+start_CE <= (datastate(0) AND NOT datastate(1) AND NOT datastate(2) AND 
+	SS(0) AND NOT SS(10) AND NOT SS(11) AND NOT SS(12) AND NOT SS(13) AND NOT SS(14) AND 
+	NOT SS(15) AND NOT SS(16) AND NOT SS(17) AND NOT SS(18) AND NOT SS(19) AND SS(1) AND 
+	NOT SS(20) AND NOT SS(21) AND NOT SS(22) AND NOT SS(23) AND NOT SS(24) AND NOT SS(25) AND 
+	NOT SS(26) AND NOT SS(27) AND NOT SS(28) AND NOT SS(29) AND SS(2) AND NOT SS(30) AND 
+	NOT SS(31) AND SS(3) AND NOT SS(4) AND NOT SS(5) AND NOT SS(6) AND NOT SS(7) AND NOT SS(8) AND 
+	NOT SS(9));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xa95*xl-*-*
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : LOW
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25

@@ -1,0 +1,5 @@
+xst -ise "D:/lvk/task4/task4.ise" -intstyle ise -ifn "D:/lvk/task4/task4.xst" -ofn "D:/lvk/task4/task4.syr" 
+ngdbuild -ise "task4.ise" -intstyle ise -dd _ngo -i -p xa9500xl task4.ngc task4.ngd  
+cpldfit -ise "D:/lvk/task4/task4.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper task4.ngd 
+XSLTProcess -ise "D:/lvk/task4/task4.ise" task4_build.xml 
+xst -ise "D:/lvk/task4/task4.ise" -intstyle ise -ifn "D:/lvk/task4/task4.xst" -ofn "D:/lvk/task4/task4.syr" 

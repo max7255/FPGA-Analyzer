@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="Cpld" num="837" delta="unknown" >Insufficient number of macrocells. The design needs at least <arg fmt="%d" index="1">147</arg> but only <arg fmt="%d" index="2">144</arg> left after allocating other resources.
+</msg>
+
+<msg type="error" file="Cpld" num="868" delta="unknown" >Cannot fit the design into any of the specified devices with the selected implementation options.
+</msg>
+
+</messages>
+
