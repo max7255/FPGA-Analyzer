@@ -1,0 +1,3 @@
+verilog isim_temp "D:/lvk/task2/test2.v"
+verilog isim_temp "D:/lvk/task2/test_test2.v"
+verilog isim_temp "D:/Xilinx/11.1/ISE/verilog/src/glbl.v"

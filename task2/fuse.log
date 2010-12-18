@@ -1,0 +1,21 @@
+Running: D:\Xilinx\11.1\ISE\bin\nt\unwrapped\fuse.exe -ise D:/lvk/task2/task2.ise -intstyle ise -incremental -lib uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o D:/lvk/task2/test_test2_isim_beh.exe -prj D:/lvk/task2/test_test2_beh.prj test_test2 glbl 
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/lvk/task2/test2.v" into library work
+Analyzing Verilog file "D:/lvk/task2/test_test2.v" into library work
+Analyzing Verilog file "D:/Xilinx/11.1/ISE/verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 118148 KB
+Fuse CPU Usage: 685 ms
+Compiling module clock
+Compiling module test2
+Compiling module test_test2
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable D:/lvk/task2/test_test2_isim_beh.exe
+Fuse Memory Usage: 120260 KB
+Fuse CPU Usage: 1138 ms
