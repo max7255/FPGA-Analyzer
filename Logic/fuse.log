@@ -1,0 +1,29 @@
+Running: C:\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/eth_fifo_tst_isim_beh.exe -prj C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/eth_fifo_tst_beh.prj work.eth_fifo_tst work.glbl 
+ISim M.81d (signature 0xcb73ee62)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file \"C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/crc32_8.v\" into library work
+Analyzing Verilog file \"C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/ETH_TX_CRC.v\" into library work
+Analyzing Verilog file \"C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/ETH_RX_CRC.v\" into library work
+Analyzing Verilog file \"C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/ETH_RX_PKT_BUF_2048_STREAM.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/12.4/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/ETH_TX_CRC.v" Line 58: Size mismatch in connection of port <d>. Formal port size is 8-bit while actual signal size is 9-bit.
+WARNING:HDLCompiler:189 - "C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/ETH_RX_PKT_BUF_2048_STREAM.v" Line 96: Size mismatch in connection of port <DIPB>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 59252 KB
+Fuse CPU Usage: 343 ms
+Compiling module crc_32
+Compiling module ETH_TX_CRC
+Compiling module ETH_RX_CRC
+Compiling module RAMB16_S9_S9
+Compiling module ETH_RX_PKT_BUF_2048_STREAM
+Compiling module eth_fifo_tst
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 7 Verilog Units
+Built simulation executable C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/eth_fifo_tst_isim_beh.exe
+Fuse Memory Usage: 65328 KB
+Fuse CPU Usage: 781 ms

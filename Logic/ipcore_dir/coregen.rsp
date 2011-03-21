@@ -1,0 +1,2 @@
+SETPROJECT "C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/ipcore_dir/coregen.cgp"
+LAUNCHXCO "C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/ipcore_dir/afifo.xco"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Workspace\lvk\doc\SP601-USB-Image_12.3\sp601_brd\SP601_BRD_Src\Logic\SP601_BRD.ncd
+OUTFILE=C:\Workspace\lvk\doc\SP601-USB-Image_12.3\sp601_brd\SP601_BRD_Src\Logic\SP601_BRD.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Workspace\lvk\doc\SP601-USB-Image_12.3\sp601_brd\SP601_BRD_Src\Logic
+LICENSE=WebPack
+USER_INFO=0_0_453

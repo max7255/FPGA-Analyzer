@@ -1,0 +1,15 @@
+ISim log file
+Running: C:\Workspace\lvk\doc\SP601-USB-Image_12.3\sp601_brd\SP601_BRD_Src\Logic\eth_fifo_tst_isim_beh.exe -gui -tclbatch isim.cmd -wdb C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/eth_fifo_tst_isim_beh.wdb 
+ISim M.81d (signature 0xcb73ee62)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Workspace/lvk/doc/SP601-USB-Image_12.3/sp601_brd/SP601_BRD_Src/Logic/ETH_TX_CRC.v" Line 42.  For instance ctrlcrc/crc_checksum/, width 8 of formal port d is not equal to width 9 of actual variable dat_dly. 
+WARNING:  For instance dut/ram/, width 1 of formal port DIPB is not equal to width 32 of actual constant.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
