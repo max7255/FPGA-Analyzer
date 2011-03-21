@@ -1,0 +1,1440 @@
+Release 12.4 - xst M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Reading design: SP601_BRD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SP601_BRD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SP601_BRD"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : SP601_BRD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"\Workspace\lvk\Logic\ipcore_dir/afifo.v\" into library work
+Parsing module <afifo>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\PB_CODE.v\" into library work
+Parsing module <PB_CODE>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\KCPSM3.v\" into library work
+Parsing module <kcpsm3>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\crc32_8.v\" into library work
+Parsing module <crc_32>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\GMII_ETH_TX_STREAM.v\" into library work
+Parsing module <GMII_ETH_TX_STREAM>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\GMII_ETH_RCV_STREAM.v\" into library work
+Parsing module <GMII_ETH_RCV_STREAM>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\ETH_TX_CRC.v\" into library work
+Parsing module <ETH_TX_CRC>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\ETH_RX_CRC.v\" into library work
+Parsing module <ETH_RX_CRC>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\ETH_MDIO.v\" into library work
+Parsing module <ETH_MDIO>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\SP601_BRD_clocks.v\" into library work
+Parsing module <SP601_BRD_CLOCKS>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\GE_MAC_STREAM.v\" into library work
+Parsing module <GE_MAC_STREAM>.
+Parsing module <eth_mac_rx_tx_testbench>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\ETH_RX_PKT_BUF_2048_STREAM.v\" into library work
+Parsing module <ETH_RX_PKT_BUF_2048_STREAM>.
+Parsing module <eth_fifo_tst>.
+Analyzing Verilog file \"\Workspace\lvk\Logic\ETH_FILTER.v\" into library work
+Parsing module <ETH_FILTER>.
+WARNING:HDLCompiler:224 - "\Workspace\lvk\Logic\ETH_FILTER.v" Line 45: Assignment to input LED
+Analyzing Verilog file \"\Workspace\lvk\Logic\SP601_BRD.v\" into library work
+Parsing module <SP601_BRD>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 72: Port CLK_PLL_LOCK is not connected to this instance
+
+Elaborating module <SP601_BRD>.
+
+Elaborating module <SP601_BRD_CLOCKS(PROC_CLK_FREQ=8'b010100)>.
+
+Elaborating module <IBUFGDS(DIFF_TERM="FALSE",IBUF_DELAY_VALUE="0",IOSTANDARD="LVDS_25")>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <PLL_ADV(BANDWIDTH="OPTIMIZED",CLKIN1_PERIOD=5,CLKIN2_PERIOD=1,DIVCLK_DIVIDE=8,CLKFBOUT_MULT=25,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=1,CLKOUT1_DIVIDE=1,CLKOUT0_PHASE=0.0,CLKOUT1_PHASE=180.0,CLKOUT2_PHASE=0.0,CLKOUT3_PHASE=0.0,CLKOUT4_PHASE=0.0,CLKOUT5_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT2_DUTY_CYCLE=0.5,CLKOUT3_DUTY_CYCLE=0.5,CLKOUT4_DUTY_CYCLE=0.5,CLKOUT5_DUTY_CYCLE=0.5,COMPENSATION="SYSTEM_SYNCHRONOUS",REF_JITTER=0.005)>.
+
+Elaborating module <PLL_ADV(BANDWIDTH="OPTIMIZED",CLKIN1_PERIOD=5,CLKIN2_PERIOD=1,DIVCLK_DIVIDE=1,CLKFBOUT_MULT=5,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=8,CLKOUT1_DIVIDE=5,CLKOUT2_DIVIDE=100,CLKOUT3_DIVIDE=20,CLKOUT4_DIVIDE=16,CLKOUT0_PHASE=0.0,CLKOUT1_PHASE=180.0,CLKOUT2_PHASE=0.0,CLKOUT3_PHASE=0.0,CLKOUT4_PHASE=0.0,CLKOUT5_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT2_DUTY_CYCLE=0.5,CLKOUT3_DUTY_CYCLE=0.5,CLKOUT4_DUTY_CYCLE=0.5,CLKOUT5_DUTY_CYCLE=0.5,COMPENSATION="SYSTEM_SYNCHRONOUS",REF_JITTER=0.005)>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <BUFIO2>.
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 76: Assignment to clk20 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 77: Assignment to clk200 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 80: Assignment to mcbclk_2x_0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 102: Assignment to proc_go ignored, since the identifier is never used
+
+Elaborating module <GE_MAC_STREAM>.
+
+Elaborating module <ETH_MDIO>.
+WARNING:HDLCompiler:872 - "\Workspace\lvk\Logic\ETH_MDIO.v" Line 71: Using initial value of interrupt since it is never assigned
+
+Elaborating module <IOBUF>.
+
+Elaborating module <PB_CODE>.
+
+Elaborating module
+<RAMB16_S18_S18(INIT_00=256'b1010000000000000110000000000000000000000000001000101010000010011001000010100000001010100000100000010000110000000010100000000110100100001000010000101000000001101001000010000010000000000001011010000000000010001000001100000011101000000000000000000000000000010,INIT_01=256'b01000001000000000010000111000000010000000000001000101100000000000000101000000000000010000000000000000100000111000100000011111100001000001101110000000000101101000000000000011000000000000000000000000000101101000000000000011000000000000000000000000000110,INIT_02=256'b01000000000000000010000111100000000001011010000000000000000000000100001001100010000001110110000100000110000000000001000000000000010000100000000000010000110000100000001011010010000000000000000000000110000000000000011001100000000001011101000100000000,INIT_03=256'b101000000000000000000000010011110000000001000000000000000001001000000000010000100000000000001110110100100000000000000000000001100000000000000110011000000000010111010001000000000000001000001000000000
+0100001110000000100000000000010001011000000000000001100000,INIT_04=256'b01010000010000101000000000000001010100010000111100000000000001010101000100101011000101000000010000010100000110000000010000000000000010000000000000010100001110000000000100111110100101000000010100010100000000000000110000000001000000010000110000001100100000,INIT_05=256'b01000000000000000101000000000000011000100000000001010010010100000110001000000000011000100000000001100010001000000110001000000000011010100001100001010010010000000,INIT_06=256'b0,INIT_07=256'b0,INIT_08=256'b0,INIT_09=256'b0,INIT_0A=256'b0,INIT_0B=256'b0,INIT_0C=256'b0,INIT_0D=256'b0,INIT_0E=256'b0,INIT_0F=256'b0,INIT_10=256'b0,INIT_11=256'b0,INIT_12=256'b0,INIT_13=256'b0,INIT_14=256'b0,INIT_15=256'b0,INIT_16=256'b0,INIT_17=256'b0,INIT_18=256'b0,INIT_19=256'b0,INIT_1A=256'b0,INIT_1B=256'b0,INIT_1C=256'b0,INIT_1D=256'b0,INIT_1E=256'b0,INIT_1F=256'b0,INIT_20=256'b0,INIT_21=256'b0,INIT_22=256'b0,INIT_23=256'b0,INIT_24=256'b0,INIT_25=256'b0,INIT_26=256'b0,INIT_27=256'b0,INIT_28=256'
+b0,INIT_29=256'b0,INIT_2A=256'b0,INIT_2B=256'b0,INIT_2C=256'b0,INIT_2D=256'b0,INIT_2E=256'b0,INIT_2F=256'b0,INIT_30=256'b0,INIT_31=256'b0,INIT_32=256'b0,INIT_33=256'b0,INIT_34=256'b0,INIT_35=256'b0,INIT_36=256'b0,INIT_37=256'b0,INIT_38=256'b0,INIT_39=256'b0,INIT_3A=256'b0,INIT_3B=256'b0,INIT_3C=256'b0,INIT_3D=256'b0,INIT_3E=256'b0,INIT_3F=256'b0100000001011001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,INITP_00=256'b0111010001010001000000010110111010010101011000000110010111100110000101000001010000000110010101100000011000000101000001010000000110010101010100010100010100011011101110111011100001111,INITP_01=256'b0,INITP_02=256'b0,INITP_03=256'b0,INITP_04=256'b0,INITP_05=256'b0,INITP_06=256'b0,INITP_07=256'b1100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)>.
+
+Elaborating module <kcpsm3>.
+
+Elaborating module <LUT1(INIT=2'b01)>.
+
+Elaborating module <FDR>.
+
+Elaborating module <FDS>.
+
+Elaborating module <LUT4(INIT=16'b010000000)>.
+
+Elaborating module <FD>.
+
+Elaborating module <FDE>.
+
+Elaborating module <LUT4(INIT=16'b1110101010101010)>.
+
+Elaborating module <LUT3(INIT=8'b0100)>.
+
+Elaborating module <FDRE>.
+
+Elaborating module <LUT4(INIT=16'b0111010000000000)>.
+
+Elaborating module <LUT4(INIT=16'b0101101000111100)>.
+
+Elaborating module <LUT3(INIT=8'b0101111)>.
+
+Elaborating module <LUT4(INIT=16'b01000000000000)>.
+
+Elaborating module <LUT4(INIT=16'b0101010000000000)>.
+
+Elaborating module <LUT2(INIT=4'b1101)>.
+
+Elaborating module <LUT4(INIT=16'b0100000111111100)>.
+
+Elaborating module <LUT2(INIT=4'b1000)>.
+
+Elaborating module <LUT4(INIT=16'b01)>.
+
+Elaborating module <MUXCY>.
+
+Elaborating module <LUT3(INIT=8'b0111111)>.
+
+Elaborating module <XORCY>.
+
+Elaborating module <LUT4(INIT=16'b0110100110010110)>.
+
+Elaborating module <LUT4(INIT=16'b1111001111111111)>.
+
+Elaborating module <LUT3(INIT=8'b11110011)>.
+
+Elaborating module <LUT2(INIT=4'b1100)>.
+
+Elaborating module <LUT2(INIT=4'b011)>.
+
+Elaborating module <INV>.
+
+Elaborating module <LUT3(INIT=8'b11100100)>.
+
+Elaborating module <FDRSE>.
+
+Elaborating module <LUT4(INIT=16'b0101000101)>.
+
+Elaborating module <RAM16X1D(INIT=16'b0)>.
+
+Elaborating module <LUT4(INIT=16'b010000000000)>.
+
+Elaborating module <LUT4(INIT=16'b1000000000000000)>.
+
+Elaborating module <RAM64X1S(INIT=64'b0)>.
+
+Elaborating module <LUT4(INIT=16'b1111111111100010)>.
+
+Elaborating module <LUT4(INIT=16'b0110111010001010)>.
+
+Elaborating module <MUXF5>.
+
+Elaborating module <LUT3(INIT=8'b011111)>.
+
+Elaborating module <LUT3(INIT=8'b01101100)>.
+
+Elaborating module <LUT3(INIT=8'b10010110)>.
+
+Elaborating module <LUT1(INIT=2'b10)>.
+
+Elaborating module <LUT4(INIT=16'b010)>.
+
+Elaborating module <LUT3(INIT=8'b11111110)>.
+
+Elaborating module <LUT4(INIT=16'b010000)>.
+
+Elaborating module <LUT4(INIT=16'b0100000000000000)>.
+
+Elaborating module <LUT4(INIT=16'b0100000000)>.
+
+Elaborating module <RAM32X1S(INIT=32'b0)>.
+
+Elaborating module <LUT4(INIT=16'b0110010101010101)>.
+
+Elaborating module <LUT4(INIT=16'b1010100110011001)>.
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\ETH_MDIO.v" Line 75: Assignment to interrupt_ack ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\ETH_MDIO.v" Line 78: Assignment to rd_strobe ignored, since the identifier is never used
+
+Elaborating module <GMII_ETH_TX_STREAM>.
+WARNING:HDLCompiler:413 - "\Workspace\lvk\Logic\GMII_ETH_TX_STREAM.v" Line 82: Result of 32-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="NONE",INIT=1'b0,SRTYPE="SYNC")>.
+
+Elaborating module <IODELAY2(COUNTER_WRAPAROUND="WRAPAROUND",DATA_RATE="SDR",DELAY_SRC="IDATAIN",IDELAY2_VALUE=0,IDELAY_MODE="NORMAL",IDELAY_TYPE="FIXED",IDELAY_VALUE=6,ODELAY_VALUE=0,SERDES_MODE="NONE",SIM_TAPDELAY_VALUE=75)>.
+
+Elaborating module <GMII_ETH_RCV_STREAM>.
+WARNING:HDLCompiler:413 - "\Workspace\lvk\Logic\GMII_ETH_RCV_STREAM.v" Line 97: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <afifo>.
+
+Elaborating module <ETH_FILTER(FILT_MAC=48'b010000101110000100111010010110101001101)>.
+WARNING:HDLCompiler:413 - "\Workspace\lvk\Logic\ETH_FILTER.v" Line 50: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\Workspace\lvk\Logic\ETH_FILTER.v" Line 71: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <ETH_RX_PKT_BUF_2048_STREAM>.
+
+Elaborating module <ETH_RX_CRC>.
+
+Elaborating module <crc_32>.
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\ETH_RX_PKT_BUF_2048_STREAM.v" Line 51: Assignment to crc_out_stream ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\ETH_RX_PKT_BUF_2048_STREAM.v" Line 52: Assignment to bad_stb ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "\Workspace\lvk\Logic\ETH_RX_PKT_BUF_2048_STREAM.v" Line 64: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\Workspace\lvk\Logic\ETH_RX_PKT_BUF_2048_STREAM.v" Line 80: Result of 32-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <RAMB16_S9_S9>.
+WARNING:HDLCompiler:189 - "\Workspace\lvk\Logic\ETH_RX_PKT_BUF_2048_STREAM.v" Line 96: Size mismatch in connection of port <DIPB>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 154: Assignment to out_pkt_buff_stream ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 158: Assignment to snd_cke ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 134: Net <filt_eth_stream[9]> does not have a driver.
+WARNING:HDLCompiler:634 - "\Workspace\lvk\Logic\SP601_BRD.v" Line 147: Net <eth_busy> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SP601_BRD>.
+    Related source file is "/workspace/lvk/logic/sp601_brd.v".
+        FIRMWARE_VERSION = 8'b00100000
+        BOARD_TYPE = "SP601"
+        IS_DSP48A_VERSION = 0
+        proc_clk_freq = 8'b00010100
+        primary_spi_multiboot_adr = 24'b000000000000000000000000
+        secondary_spi_multiboot_adr = 24'b000010000000000000000000
+        reboot_adr = 24'b000000000000000000000000
+        SERVER_MAC = 48'b000000000010000101110000100111010010110101001101
+        MY_MAC = 48'b000000000101000011000010101011100100000000000001
+WARNING:Xst:647 - Input <GPIO_SWITCH<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <GPIO_BUTTON<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CPU_RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PHY_CRS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PHY_COL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PHY_RXER> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 74: Output port <CLK20> of the instance <clocks> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 74: Output port <CLK200> of the instance <clocks> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 74: Output port <PROC_CLK> of the instance <clocks> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 74: Output port <MCBCLK_2X_0> of the instance <clocks> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 74: Output port <MCBCLK_2X_180> of the instance <clocks> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 74: Output port <MCBCLK_PLL_LOCK> of the instance <clocks> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 74: Output port <CLK_PLL_LOCK> of the instance <clocks> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 120: Output port <LINK_SPEED> of the instance <mac> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 120: Output port <FE_OUT_TICK> of the instance <mac> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 137: Output port <OUT_ETH_STREAM_OTHER> of the instance <mac_filter> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/sp601_brd.v" line 150: Output port <OUT_ETH_STREAM> of the instance <rx_pkt_fifo> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <GPIO_LED> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <filt_eth_stream> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <eth_busy> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <SP601_BRD> synthesized.
+
+Synthesizing Unit <SP601_BRD_CLOCKS>.
+    Related source file is "/workspace/lvk/logic/sp601_brd_clocks.v".
+        PROC_CLK_FREQ = 8'b00010100
+    Summary:
+	no macro.
+Unit <SP601_BRD_CLOCKS> synthesized.
+
+Synthesizing Unit <GE_MAC_STREAM>.
+    Related source file is "/workspace/lvk/logic/ge_mac_stream.v".
+    Set property "KEEP = TRUE" for signal <fe_txclk_inff>.
+    Found 2-bit register for signal <fe_txclk_dly>.
+    Found 1-bit register for signal <FE_OUT_TICK>.
+    Found 1-bit register for signal <e_tgl>.
+    Found 1-bit register for signal <fe_txclk_inff>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal fe_txclk_inff may hinder XST clustering optimizations.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <GE_MAC_STREAM> synthesized.
+
+Synthesizing Unit <ETH_MDIO>.
+    Related source file is "/workspace/lvk/logic/eth_mdio.v".
+        mdio_reg_adr = 8'b00000000
+INFO:Xst:3010 - "/workspace/lvk/logic/eth_mdio.v" line 73: Output port <read_strobe> of the instance <cpu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/eth_mdio.v" line 73: Output port <interrupt_ack> of the instance <cpu> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <mdio_z>.
+    Found 1-bit register for signal <E_MDC>.
+    Found 1-bit register for signal <E_RST_L>.
+    Found 2-bit register for signal <E_LINK_SPEED>.
+    Found 1-bit register for signal <mdio_out>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ETH_MDIO> synthesized.
+
+Synthesizing Unit <PB_CODE>.
+    Related source file is "/workspace/lvk/logic/pb_code.v".
+    Set property "INIT_00 = A000C00000045413214054102180500D2108500D2104002D0011060740000002" for instance <rom>.
+    Set property "INIT_01 = 0208010E02001160005000400020E207E106E005A000C0000005A000C0000006" for instance <rom>.
+    Set property "INIT_02 = 00400021E005A000004262076106001000420010C202D200000600066005D100" for instance <rom>.
+    Set property "INIT_03 = A000004F004000120042000ED200000600066005D1000208010E020011600060" for instance <rom>.
+    Set property "INIT_04 = 1410A0005443C001544AC501050601000200050E004FA5014500030040430320" for instance <rom>.
+    Set property "INIT_05 = 0000000000000000000000008000A000C400A4A0C400C400C440C400D430A480" for instance <rom>.
+    Set property "INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_0A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_0B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_0C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_0D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_0E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_0F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_1A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_1B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_1C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_1D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_1E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_1F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_2A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_2B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_2C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_2D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_2E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_2F = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_3A = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_3B = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_3C = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_3D = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_3E = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INIT_3F = 4059000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INITP_00 = 0000000000000000000E8A202DD2AC0CBCC28280CAC0C0A0A032AA28A377770F" for instance <rom>.
+    Set property "INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Set property "INITP_07 = C000000000000000000000000000000000000000000000000000000000000000" for instance <rom>.
+    Summary:
+	no macro.
+Unit <PB_CODE> synthesized.
+
+Synthesizing Unit <kcpsm3>.
+    Related source file is "/workspace/lvk/logic/kcpsm3.v".
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 1" for instance <t_state_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0080" for instance <int_pulse_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = EAAA" for instance <int_update_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 04" for instance <int_value_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 7400" for instance <move_group_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 5A3C" for instance <condition_met_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 2F" for instance <normal_count_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 1000" for instance <call_type_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 5400" for instance <push_pop_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = D" for instance <valid_move_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 41FC" for instance <flag_type_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 8" for instance <flag_enable_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0001" for instance <low_zero_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0001" for instance <high_zero_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 3F" for instance <sel_shadow_zero_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6996" for instance <low_parity_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6996" for instance <high_parity_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = F3FF" for instance <sel_parity_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = F3" for instance <sel_arith_carry_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = C" for instance <sel_shift_carry_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 3" for instance <sel_shadow_carry_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_8>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_8>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <vector_select_mux_9>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <value_select_mux_9>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0145" for instance <register_type_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 8" for instance <register_enable_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000" for instance <reg_loop_register_bit_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <operand_select_mux_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000" for instance <reg_loop_register_bit_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <operand_select_mux_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000" for instance <reg_loop_register_bit_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <operand_select_mux_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000" for instance <reg_loop_register_bit_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <operand_select_mux_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000" for instance <reg_loop_register_bit_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <operand_select_mux_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000" for instance <reg_loop_register_bit_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <operand_select_mux_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000" for instance <reg_loop_register_bit_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <operand_select_mux_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000" for instance <reg_loop_register_bit_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <operand_select_mux_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0400" for instance <memory_type_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 8000" for instance <memory_enable_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000000000000000" for instance <memory_bit_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000000000000000" for instance <memory_bit_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000000000000000" for instance <memory_bit_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000000000000000" for instance <memory_bit_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000000000000000" for instance <memory_bit_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000000000000000" for instance <memory_bit_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000000000000000" for instance <memory_bit_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0000000000000000" for instance <memory_bit_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FFE2" for instance <sel_logical_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6E8A" for instance <logical_lut_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6E8A" for instance <logical_lut_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6E8A" for instance <logical_lut_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6E8A" for instance <logical_lut_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6E8A" for instance <logical_lut_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6E8A" for instance <logical_lut_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6E8A" for instance <logical_lut_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6E8A" for instance <logical_lut_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <high_shift_in_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <low_shift_in_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_carry_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_mux_lut_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_mux_lut_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_mux_lut_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_mux_lut_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_mux_lut_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_mux_lut_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_mux_lut_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <shift_mux_lut_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 1F" for instance <sel_arith_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6C" for instance <arith_carry_in_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 96" for instance <arith_lut_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 96" for instance <arith_lut_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 96" for instance <arith_lut_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 96" for instance <arith_lut_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 96" for instance <arith_lut_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 96" for instance <arith_lut_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 96" for instance <arith_lut_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 2" for instance <arith_carry_out_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 96" for instance <arith_lut_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0002" for instance <input_fetch_type_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FE" for instance <or_lut_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <mux_lut_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FE" for instance <or_lut_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <mux_lut_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FE" for instance <or_lut_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <mux_lut_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FE" for instance <or_lut_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <mux_lut_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FE" for instance <or_lut_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <mux_lut_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FE" for instance <or_lut_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <mux_lut_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FE" for instance <or_lut_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <mux_lut_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = FE" for instance <or_lut_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = E4" for instance <mux_lut_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0010" for instance <io_decode_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 4000" for instance <write_active_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 0100" for instance <read_active_lut>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_4>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_5>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_6>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_7>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_8>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 00000000" for instance <stack_bit_9>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = 6555" for instance <count_lut_0>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = A999" for instance <count_lut_1>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = A999" for instance <count_lut_2>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = A999" for instance <count_lut_3>.
+WARNING:Xst:37 - Detected unknown constraint/property "xc_props". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "INIT = A999" for instance <count_lut_4>.
+    Summary:
+	no macro.
+Unit <kcpsm3> synthesized.
+
+Synthesizing Unit <GMII_ETH_TX_STREAM>.
+    Related source file is "/workspace/lvk/logic/gmii_eth_tx_stream.v".
+WARNING:Xst:647 - Input <SPEED<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <frm_dly>.
+    Found 8-bit register for signal <txdat_reg>.
+    Found 1-bit register for signal <txen_reg>.
+    Found 3-bit register for signal <outcnt>.
+    Found 8-bit register for signal <TXD>.
+    Found 1-bit register for signal <TXCTRL>.
+    Found 64-bit register for signal <n0030[63:0]>.
+    Found 4-bit adder for signal <n0052[3:0]> created at line 82.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  93 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <GMII_ETH_TX_STREAM> synthesized.
+
+Synthesizing Unit <GMII_ETH_RCV_STREAM>.
+    Related source file is "/workspace/lvk/logic/gmii_eth_rcv_stream.v".
+    Set property "KEEP = TRUE" for signal <rxdat_inff>.
+    Set property "KEEP = TRUE" for signal <rx_en_inff>.
+WARNING:Xst:647 - Input <RST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3010 - "/workspace/lvk/logic/gmii_eth_rcv_stream.v" line 105: Output port <full> of the instance <clkchng_fifo> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <rx_en_inff>.
+    Found 8-bit register for signal <ge_rxd_byte>.
+    Found 1-bit register for signal <ge_rxd_byte_en>.
+    Found 1-bit register for signal <ge_frame_low>.
+    Found 1-bit register for signal <fe_tgl>.
+    Found 8-bit register for signal <fe_rxd_byte>.
+    Found 1-bit register for signal <fe_rxd_byte_en>.
+    Found 1-bit register for signal <fe_frame_low>.
+    Found 4-bit register for signal <out_cnt>.
+    Found 1-bit register for signal <cke>.
+    Found 1-bit register for signal <out_cke>.
+    Found 1-bit register for signal <out_frm>.
+    Found 8-bit register for signal <out_dat>.
+    Found 8-bit register for signal <rxdat_inff>.
+    Found 5-bit adder for signal <n0065[4:0]> created at line 97.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal rxdat_inff may hinder XST clustering optimizations.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <GMII_ETH_RCV_STREAM> synthesized.
+
+Synthesizing Unit <ETH_FILTER>.
+    Related source file is "/workspace/lvk/logic/eth_filter.v".
+        FILT_MAC = 48'b000000000010000101110000100111010010110101001101
+WARNING:Xst:647 - Input <LED> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <match>.
+    Found 96-bit register for signal <n0050[95:0]>.
+    Found 12-bit register for signal <frm_dly>.
+    Found 10-bit register for signal <OUT_ETH_STREAM_FILT>.
+    Found 10-bit register for signal <OUT_ETH_STREAM_OTHER>.
+    Found 4-bit register for signal <byte_cnt>.
+    Found 5-bit adder for signal <n0072[4:0]> created at line 50.
+    Found 4-bit comparator lessequal for signal <n0021> created at line 66
+    Found 4-bit comparator greater for signal <byte_cnt[3]_PWR_69_o_LessThan_18_o> created at line 66
+    Found 8-bit comparator not equal for signal <n0026> created at line 68
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 133 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <ETH_FILTER> synthesized.
+
+Synthesizing Unit <ETH_RX_PKT_BUF_2048_STREAM>.
+    Related source file is "/workspace/lvk/logic/eth_rx_pkt_buf_2048_stream.v".
+INFO:Xst:3010 - "/workspace/lvk/logic/eth_rx_pkt_buf_2048_stream.v" line 48: Output port <OUT_ETH_STREAM> of the instance <rxcrc> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/workspace/lvk/logic/eth_rx_pkt_buf_2048_stream.v" line 48: Output port <OUT_BAD_STB> of the instance <rxcrc> is unconnected or connected to loadless signal.
+    Found 11-bit register for signal <wrt_a_sv>.
+    Found 1-bit register for signal <wr_e_p_s>.
+    Found 1-bit register for signal <out_go_reg>.
+    Found 11-bit register for signal <rd_a>.
+    Found 1-bit register for signal <OUT_REQ>.
+    Found 8-bit register for signal <out_dat>.
+    Found 1-bit register for signal <out_frm>.
+    Found 1-bit register for signal <out_cke>.
+    Found 11-bit register for signal <wrt_a>.
+    Found 12-bit adder for signal <n0062[11:0]> created at line 65.
+    Found 12-bit adder for signal <n0064[11:0]> created at line 80.
+    Found 11-bit comparator not equal for signal <n0002> created at line 60
+    Found 11-bit comparator equal for signal <wrt_a_nxt[10]_rd_a[10]_equal_4_o> created at line 64
+    Found 11-bit comparator not equal for signal <n0024> created at line 81
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <ETH_RX_PKT_BUF_2048_STREAM> synthesized.
+WARNING:Xst:2972 - "/workspace/lvk/logic/eth_rx_crc.v" line 60. All outputs of instance <crc_checksum> of block <crc_32> are unconnected in block <ETH_RX_CRC>. Underlying logic will be removed.
+
+Synthesizing Unit <ETH_RX_CRC>.
+    Related source file is "/workspace/lvk/logic/eth_rx_crc.v".
+        magic_number = 32'b11000111000001001101110101111011
+INFO:Xst:3010 - "/workspace/lvk/logic/eth_rx_crc.v" line 60: Output port <crc> of the instance <crc_checksum> is unconnected or connected to loadless signal.
+INFO:Xst:2840 - Register <out_cke<0:0>> in unit <ETH_RX_CRC> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2840 - Register <out_frm<0:0>> in unit <ETH_RX_CRC> has a constant value of 0 during circuit operation. The register is replaced by logic.
+    WARNING:Xst:2404 -  FFs/Latches <OUT_DAT<7:0>> (without init value) have a constant value of 0 in block <ETH_RX_CRC>.
+INFO:Xst:2840 - Register <OUT_DAT_STB<0:0>> in unit <ETH_RX_CRC> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2840 - Register <OUT_OK_STB<0:0>> in unit <ETH_RX_CRC> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2840 - Register <OUT_BAD_STB<0:0>> in unit <ETH_RX_CRC> has a constant value of 0 during circuit operation. The register is replaced by logic.
+    Summary:
+	no macro.
+Unit <ETH_RX_CRC> synthesized.
+
+Synthesizing Unit <crc_32>.
+    Related source file is "/workspace/lvk/logic/crc32_8.v".
+    Found 1-bit register for signal <crc<7>>.
+    Found 1-bit register for signal <crc<6>>.
+    Found 1-bit register for signal <crc<5>>.
+    Found 1-bit register for signal <crc<4>>.
+    Found 1-bit register for signal <crc<3>>.
+    Found 1-bit register for signal <crc<2>>.
+    Found 1-bit register for signal <crc<1>>.
+    Found 1-bit register for signal <crc<0>>.
+    Found 1-bit register for signal <crc_reg<31>>.
+    Found 1-bit register for signal <crc_reg<30>>.
+    Found 1-bit register for signal <crc_reg<29>>.
+    Found 1-bit register for signal <crc_reg<28>>.
+    Found 1-bit register for signal <crc_reg<27>>.
+    Found 1-bit register for signal <crc_reg<26>>.
+    Found 1-bit register for signal <crc_reg<25>>.
+    Found 1-bit register for signal <crc_reg<24>>.
+    Found 1-bit register for signal <crc_reg<23>>.
+    Found 1-bit register for signal <crc_reg<22>>.
+    Found 1-bit register for signal <crc_reg<21>>.
+    Found 1-bit register for signal <crc_reg<20>>.
+    Found 1-bit register for signal <crc_reg<19>>.
+    Found 1-bit register for signal <crc_reg<18>>.
+    Found 1-bit register for signal <crc_reg<17>>.
+    Found 1-bit register for signal <crc_reg<16>>.
+    Found 1-bit register for signal <crc_reg<15>>.
+    Found 1-bit register for signal <crc_reg<14>>.
+    Found 1-bit register for signal <crc_reg<13>>.
+    Found 1-bit register for signal <crc_reg<12>>.
+    Found 1-bit register for signal <crc_reg<11>>.
+    Found 1-bit register for signal <crc_reg<10>>.
+    Found 1-bit register for signal <crc_reg<9>>.
+    Found 1-bit register for signal <crc_reg<8>>.
+    Found 1-bit register for signal <crc_reg<7>>.
+    Found 1-bit register for signal <crc_reg<6>>.
+    Found 1-bit register for signal <crc_reg<5>>.
+    Found 1-bit register for signal <crc_reg<4>>.
+    Found 1-bit register for signal <crc_reg<3>>.
+    Found 1-bit register for signal <crc_reg<2>>.
+    Found 1-bit register for signal <crc_reg<1>>.
+    Found 1-bit register for signal <crc_reg<0>>.
+    Summary:
+	inferred  40 D-type flip-flop(s).
+Unit <crc_32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 12-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 2
+# Registers                                            : 43
+ 1-bit register                                        : 22
+ 10-bit register                                       : 3
+ 11-bit register                                       : 3
+ 12-bit register                                       : 1
+ 2-bit register                                        : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+ 64-bit register                                       : 1
+ 8-bit register                                        : 7
+ 96-bit register                                       : 1
+# Comparators                                          : 6
+ 11-bit comparator equal                               : 1
+ 11-bit comparator not equal                           : 2
+ 4-bit comparator greater                              : 1
+ 4-bit comparator lessequal                            : 1
+ 8-bit comparator not equal                            : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/afifo.ngc>.
+Loading core <afifo> for timing and area information for instance <clkchng_fifo>.
+INFO:Xst:2261 - The FF/Latch <ge_rxd_byte_0> in Unit <receive> is equivalent to the following FF/Latch, which will be removed : <fe_rxd_byte_4> 
+INFO:Xst:2261 - The FF/Latch <ge_rxd_byte_1> in Unit <receive> is equivalent to the following FF/Latch, which will be removed : <fe_rxd_byte_5> 
+INFO:Xst:2261 - The FF/Latch <ge_rxd_byte_2> in Unit <receive> is equivalent to the following FF/Latch, which will be removed : <fe_rxd_byte_6> 
+INFO:Xst:2261 - The FF/Latch <ge_rxd_byte_3> in Unit <receive> is equivalent to the following FF/Latch, which will be removed : <fe_rxd_byte_7> 
+WARNING:Xst:1293 - FF/Latch <wrt_a_10> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_9> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_8> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_7> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_6> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_5> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_4> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_3> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_2> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_1> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wrt_a_0> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <wr_e_p_s> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_10> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_9> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_8> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_7> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_6> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_5> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_4> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_3> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_2> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_1> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_0> has a constant value of 0 in block <rx_pkt_fifo>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ETH_RX_PKT_BUF_2048_STREAM>.
+The following registers are absorbed into counter <rd_a>: 1 register on signal <rd_a>.
+Unit <ETH_RX_PKT_BUF_2048_STREAM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <GMII_ETH_RCV_STREAM>.
+The following registers are absorbed into counter <out_cnt>: 1 register on signal <out_cnt>.
+Unit <GMII_ETH_RCV_STREAM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <GMII_ETH_TX_STREAM>.
+The following registers are absorbed into counter <outcnt>: 1 register on signal <outcnt>.
+Unit <GMII_ETH_TX_STREAM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 3
+ 11-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 386
+ Flip-Flops                                            : 386
+# Comparators                                          : 6
+ 11-bit comparator equal                               : 1
+ 11-bit comparator not equal                           : 2
+ 4-bit comparator greater                              : 1
+ 4-bit comparator lessequal                            : 1
+ 8-bit comparator not equal                            : 1
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 9
+ 32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch out_cke hinder the constant cleaning in the block ETH_RX_PKT_BUF_2048_STREAM.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <ge_rxd_byte_0> in Unit <GMII_ETH_RCV_STREAM> is equivalent to the following FF/Latch, which will be removed : <fe_rxd_byte_4> 
+INFO:Xst:2261 - The FF/Latch <ge_rxd_byte_1> in Unit <GMII_ETH_RCV_STREAM> is equivalent to the following FF/Latch, which will be removed : <fe_rxd_byte_5> 
+INFO:Xst:2261 - The FF/Latch <ge_rxd_byte_2> in Unit <GMII_ETH_RCV_STREAM> is equivalent to the following FF/Latch, which will be removed : <fe_rxd_byte_6> 
+INFO:Xst:2261 - The FF/Latch <ge_rxd_byte_3> in Unit <GMII_ETH_RCV_STREAM> is equivalent to the following FF/Latch, which will be removed : <fe_rxd_byte_7> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_0> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_0> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_1> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_1> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_2> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_2> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_3> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_3> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_4> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_4> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_5> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_5> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_6> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_6> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_7> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_7> 
+INFO:Xst:2261 - The FF/Latch <OUT_ETH_STREAM_FILT_9> in Unit <ETH_FILTER> is equivalent to the following FF/Latch, which will be removed : <OUT_ETH_STREAM_OTHER_9> 
+WARNING:Xst:1293 - FF/Latch <wrt_a_10> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_9> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_8> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_7> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_6> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_5> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_4> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_3> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_2> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_1> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_0> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wr_e_p_s> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_10> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_9> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_8> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_7> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_6> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_5> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_4> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_3> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_2> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_1> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <wrt_a_sv_0> has a constant value of 0 in block <ETH_RX_PKT_BUF_2048_STREAM>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance prog/rom in unit ETH_MDIO of type RAMB16_S18_S18 has been replaced by RAMB16BWER
+INFO:Xst:1901 - Instance ram in unit ETH_RX_PKT_BUF_2048_STREAM of type RAMB16_S9_S9 has been replaced by RAMB16BWER
+
+Optimizing unit <SP601_BRD> ...
+
+Optimizing unit <GE_MAC_STREAM> ...
+
+Optimizing unit <GMII_ETH_TX_STREAM> ...
+
+Optimizing unit <ETH_MDIO> ...
+
+Optimizing unit <kcpsm3> ...
+
+Optimizing unit <GMII_ETH_RCV_STREAM> ...
+
+Optimizing unit <SP601_BRD_CLOCKS> ...
+
+Optimizing unit <ETH_FILTER> ...
+
+Optimizing unit <ETH_RX_PKT_BUF_2048_STREAM> ...
+WARNING:Xst:2677 - Node <mac/fe_txclk_dly_1> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <mac/fe_txclk_dly_0> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <mac/e_tgl> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <mac/FE_OUT_TICK> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <mac_filter/OUT_ETH_STREAM_OTHER_8> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_cke> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_frm> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_dat_7> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_dat_6> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_dat_5> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_dat_4> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_dat_3> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_dat_2> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_dat_1> of sequential type is unconnected in block <SP601_BRD>.
+WARNING:Xst:2677 - Node <rx_pkt_fifo/out_dat_0> of sequential type is unconnected in block <SP601_BRD>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SP601_BRD, actual ratio is 6.
+INFO:Xst:2260 - The FF/Latch <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/gconvfifo.rf/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/gconvfifo.rf/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/gconvfifo.rf/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/gconvfifo.rf/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/gconvfifo.rf/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
+
+Final Macro Processing ...
+
+Processing Unit <SP601_BRD> :
+	Found 8-bit shift register for signal <mac/trans/data_dly_1_63>.
+	Found 8-bit shift register for signal <mac/trans/data_dly_1_62>.
+	Found 8-bit shift register for signal <mac/trans/data_dly_1_61>.
+	Found 8-bit shift register for signal <mac/trans/data_dly_1_60>.
+	Found 8-bit shift register for signal <mac/trans/data_dly_1_59>.
+	Found 8-bit shift register for signal <mac/trans/data_dly_1_58>.
+	Found 8-bit shift register for signal <mac/trans/data_dly_1_57>.
+	Found 8-bit shift register for signal <mac/trans/data_dly_1_56>.
+	Found 7-bit shift register for signal <mac/trans/frm_dly_7>.
+	Found 12-bit shift register for signal <mac_filter/frm_dly_12>.
+	Found 12-bit shift register for signal <mac_filter/dat_dly_1_95>.
+	Found 12-bit shift register for signal <mac_filter/dat_dly_1_94>.
+	Found 12-bit shift register for signal <mac_filter/dat_dly_1_93>.
+	Found 12-bit shift register for signal <mac_filter/dat_dly_1_92>.
+	Found 12-bit shift register for signal <mac_filter/dat_dly_1_91>.
+	Found 12-bit shift register for signal <mac_filter/dat_dly_1_90>.
+	Found 12-bit shift register for signal <mac_filter/dat_dly_1_89>.
+	Found 12-bit shift register for signal <mac_filter/dat_dly_1_88>.
+Unit <SP601_BRD> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 174
+ Flip-Flops                                            : 174
+# Shift Registers                                      : 18
+ 12-bit shift register                                 : 9
+ 7-bit shift register                                  : 1
+ 8-bit shift register                                  : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SP601_BRD.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 377
+#      GND                         : 2
+#      INV                         : 12
+#      LUT1                        : 12
+#      LUT2                        : 40
+#      LUT3                        : 88
+#      LUT4                        : 77
+#      LUT5                        : 13
+#      LUT6                        : 25
+#      MUXCY                       : 49
+#      MUXF5                       : 9
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 264
+#      FD                          : 78
+#      FDC                         : 38
+#      FDCE                        : 26
+#      FDE                         : 56
+#      FDP                         : 3
+#      FDPE                        : 3
+#      FDR                         : 42
+#      FDRE                        : 15
+#      FDS                         : 2
+#      ODDR2                       : 1
+# RAMS                             : 32
+#      RAM16X1D                    : 11
+#      RAM32M                      : 1
+#      RAM32X1S                    : 10
+#      RAM64X1S                    : 8
+#      RAMB16BWER                  : 2
+# Shift Registers                  : 18
+#      SRLC16E                     : 18
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 31
+#      BUFIO2                      : 1
+#      IBUF                        : 10
+#      IBUFG                       : 1
+#      IBUFGDS                     : 1
+#      IOBUF                       : 1
+#      OBUF                        : 17
+# Others                           : 11
+#      IODELAY2                    : 9
+#      PLL_ADV                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             263  out of  18224     1%  
+ Number of Slice LUTs:                  329  out of   9112     3%  
+    Number used as Logic:               267  out of   9112     2%  
+    Number used as Memory:               62  out of   2176     2%  
+       Number used as RAM:               44
+       Number used as SRL:               18
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    405
+   Number with an unused Flip Flop:     142  out of    405    35%  
+   Number with an unused LUT:            76  out of    405    18%  
+   Number of fully used LUT-FF pairs:   187  out of    405    46%  
+   Number of unique control sets:        29
+
+IO Utilization: 
+ Number of IOs:                          43
+ Number of bonded IOBs:                  31  out of    232    13%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     32     6%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+ Number of PLL_ADVs:                      2  out of      2   100%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+SYSCLK_P                           | clocks/u_pll_adv_125:CLKOUT0| 146   |
+SYSCLK_P                           | clocks/u_pll_adv_125:CLKOUT3| 109   |
+PHY_RXCLK                          | IBUFG+BUFG                  | 51    |
+clk125_rx_bufio                    | NONE(mac/receive/rx_en_inff)| 9     |
+PHY_TXER_OBUF                      | NONE(mac/eth_ctrl/prog/rom) | 1     |
+-----------------------------------+-----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.341ns (Maximum Frequency: 187.231MHz)
+   Minimum input arrival time before clock: 6.079ns
+   Maximum output required time after clock: 4.270ns
+   Maximum combinational path delay: 1.328ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYSCLK_P'
+  Clock period: 4.221ns (frequency: 236.897MHz)
+  Total number of paths / destination ports: 4972 / 614
+-------------------------------------------------------------------------
+Delay:               6.754ns (Levels of Logic = 4)
+  Source:            mac_filter/byte_cnt_0 (FF)
+  Destination:       mac_filter/match (FF)
+  Source Clock:      SYSCLK_P rising 0.6X
+  Destination Clock: SYSCLK_P rising 0.6X
+
+  Data Path: mac_filter/byte_cnt_0 to mac_filter/match
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.633   1.577  mac_filter/byte_cnt_0 (mac_filter/byte_cnt_0)
+     LUT6:I1->O            1   0.373   0.970  mac_filter/_n02636_SW1 (N18)
+     LUT6:I3->O            1   0.373   0.970  mac_filter/_n02636 (mac_filter/_n02636)
+     LUT6:I3->O            1   0.373   0.970  mac_filter/_n02639 (mac_filter/_n0263)
+     LUT3:I0->O            1   0.373   0.000  mac_filter/match_rstpot (mac_filter/match_rstpot)
+     FD:D                      0.142          mac_filter/match
+    ----------------------------------------
+    Total                      6.754ns (2.267ns logic, 4.487ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PHY_RXCLK'
+  Clock period: 5.341ns (frequency: 187.231MHz)
+  Total number of paths / destination ports: 247 / 76
+-------------------------------------------------------------------------
+Delay:               5.341ns (Levels of Logic = 3)
+  Source:            mac/receive/ge_frame_low (FF)
+  Destination:       mac/receive/clkchng_fifo/BU2/U0/gconvfifo.rf/grf.rf/mem/gdm.dm/Mram_RAM22 (RAM)
+  Source Clock:      PHY_RXCLK rising
+  Destination Clock: PHY_RXCLK rising
+
+  Data Path: mac/receive/ge_frame_low to mac/receive/clkchng_fifo/BU2/U0/gconvfifo.rf/grf.rf/mem/gdm.dm/Mram_RAM22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.633   1.327  mac/receive/ge_frame_low (mac/receive/ge_frame_low)
+     LUT6:I1->O            2   0.373   0.864  mac/receive/Mmux_wr_stb11 (mac/receive/wr_stb)
+     begin scope: 'mac/receive/clkchng_fifo'
+     begin scope: 'BU2'
+     LUT2:I0->O           16   0.373   1.181  U0/gconvfifo.rf/grf.rf/gl0.wr/ram_wr_en_i1 (U0/gconvfifo.rf/grf.rf/ram_wr_en)
+     RAM16X1D:WE               0.590          U0/gconvfifo.rf/grf.rf/mem/gdm.dm/Mram_RAM22
+    ----------------------------------------
+    Total                      5.341ns (1.969ns logic, 3.372ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYSCLK_P'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              6.079ns (Levels of Logic = 9)
+  Source:            PHY_MDIO (PAD)
+  Destination:       mac/eth_ctrl/cpu/zero_flag_flop (FF)
+  Destination Clock: SYSCLK_P rising 0.3X
+
+  Data Path: PHY_MDIO to mac/eth_ctrl/cpu/zero_flag_flop
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           1   1.328   0.682  mac/eth_ctrl/IOBUF_mdio (mac/eth_ctrl/mdio_in)
+     LUT2:I1->O            1   0.373   0.820  mac/eth_ctrl/Mmux_rd_dat11 (mac/eth_ctrl/rd_dat<0>)
+     LUT3:I1->O            1   0.373   0.000  mac/eth_ctrl/cpu/mux_lut_0 (mac/eth_ctrl/cpu/input_group<0>)
+     MUXF5:I1->O           2   0.230   1.104  mac/eth_ctrl/cpu/shift_in_muxf5_0 (mac/eth_ctrl/cpu/alu_result<0>)
+     LUT4:I0->O            1   0.364   0.000  mac/eth_ctrl/cpu/low_zero_lut (mac/eth_ctrl/cpu/low_zero)
+     MUXCY:S->O            1   0.330   0.000  mac/eth_ctrl/cpu/low_zero_muxcy (mac/eth_ctrl/cpu/low_zero_carry)
+     MUXCY:CI->O           1   0.032   0.000  mac/eth_ctrl/cpu/high_zero_cymux (mac/eth_ctrl/cpu/high_zero_carry)
+     MUXCY:CI->O           0   0.032   0.000  mac/eth_ctrl/cpu/zero_cymux (mac/eth_ctrl/cpu/zero_carry)
+     XORCY:CI->O           1   0.269   0.000  mac/eth_ctrl/cpu/zero_xor (mac/eth_ctrl/cpu/zero_fast_route)
+     FDRE:D                    0.142          mac/eth_ctrl/cpu/zero_flag_flop
+    ----------------------------------------
+    Total                      6.079ns (3.473ns logic, 2.606ns route)
+                                       (57.1% logic, 42.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk125_rx_bufio'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              0.823ns (Levels of Logic = 0)
+  Source:            mac/IODELAY2_GE_RXDV:DATAOUT (PAD)
+  Destination:       mac/receive/rx_en_inff (FF)
+  Destination Clock: clk125_rx_bufio rising
+
+  Data Path: mac/IODELAY2_GE_RXDV:DATAOUT to mac/receive/rx_en_inff
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IODELAY2:DATAOUT       1   0.000   0.681  mac/IODELAY2_GE_RXDV (mac/ge_rxdv_dly)
+     FD:D                      0.142          mac/receive/rx_en_inff
+    ----------------------------------------
+    Total                      0.823ns (0.142ns logic, 0.681ns route)
+                                       (17.3% logic, 82.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYSCLK_P'
+  Total number of paths / destination ports: 13 / 12
+-------------------------------------------------------------------------
+Offset:              4.270ns (Levels of Logic = 1)
+  Source:            mac/trans/TXD_7 (FF)
+  Destination:       PHY_TXD<7> (PAD)
+  Source Clock:      SYSCLK_P rising 0.6X
+
+  Data Path: mac/trans/TXD_7 to PHY_TXD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.633   0.725  mac/trans/TXD_7 (mac/trans/TXD_7)
+     OBUF:I->O                 2.912          PHY_TXD_7_OBUF (PHY_TXD<7>)
+    ----------------------------------------
+    Total                      4.270ns (3.545ns logic, 0.725ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Delay:               1.328ns (Levels of Logic = 1)
+  Source:            PHY_RXD<7> (PAD)
+  Destination:       mac/rxd_dly[7].IODELAY2_GE_RXD:IDATAIN (PAD)
+
+  Data Path: PHY_RXD<7> to mac/rxd_dly[7].IODELAY2_GE_RXD:IDATAIN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             0   1.328   0.000  PHY_RXD_7_IBUF (PHY_RXD_7_IBUF)
+    IODELAY2:IDATAIN           0.000          mac/rxd_dly[7].IODELAY2_GE_RXD
+    ----------------------------------------
+    Total                      1.328ns (1.328ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PHY_RXCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PHY_RXCLK      |    5.341|         |         |         |
+SYSCLK_P       |    6.922|         |         |         |
+clk125_rx_bufio|    3.320|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYSCLK_P
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PHY_RXCLK      |    3.262|         |         |         |
+SYSCLK_P       |   12.788|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.00 secs
+ 
+--> 
+
+Total memory usage is 148500 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  233 (   0 filtered)
+Number of infos    :   52 (   0 filtered)
+

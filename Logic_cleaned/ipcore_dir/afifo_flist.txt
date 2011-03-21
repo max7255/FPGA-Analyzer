@@ -1,0 +1,16 @@
+# Output products list for <afifo>
+_xmsgs\pn_parser.xmsgs
+afifo.asy
+afifo.gise
+afifo.ngc
+afifo.sym
+afifo.v
+afifo.veo
+afifo.vhd
+afifo.vho
+afifo.xco
+afifo.xise
+afifo_flist.txt
+afifo_xmdf.tcl
+fifo_generator_readme.txt
+fifo_generator_ug175.pdf

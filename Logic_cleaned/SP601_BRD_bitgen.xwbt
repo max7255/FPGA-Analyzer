@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Workspace\lvk\Logic\SP601_BRD.ncd
+OUTFILE=C:\Workspace\lvk\Logic\SP601_BRD.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Workspace\lvk\Logic
+LICENSE=WebPack
+USER_INFO=0_0_349
