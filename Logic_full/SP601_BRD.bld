@@ -1,0 +1,106 @@
+Release 12.4 ngdbuild M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc SP601_BRD.ucf -p xc6slx16-csg324-2
+SP601_BRD.ngc SP601_BRD.ngd
+
+Reading NGO file "C:/Workspace/lvk/Logic/SP601_BRD.ngc" ...
+Loading design module "ipcore_dir/afifo.ngc"...
+Applying constraints in "ipcore_dir/afifo.ncf" to module
+"ipcore_dir/afifo.ngc"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "SP601_BRD.ucf" ...
+WARNING:NgdBuild:931 - The value of SIM_DEVICE on instance
+   'clocks/u_pll_adv_125' of type PLL_ADV has been changed from 'VIRTEX5' to
+   'SPARTAN6' to correct post-ngdbuild and timing simulation for this primitive.
+    In order for functional simulation to be correct, the value of SIM_DEVICE
+   should be changed in this same manner in the source netlist or constraint
+   file.
+WARNING:NgdBuild:931 - The value of SIM_DEVICE on instance 'clocks/u_pll_adv' of
+   type PLL_ADV has been changed from 'VIRTEX5' to 'SPARTAN6' to correct
+   post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_SYSCLK_P', was traced into PLL_ADV instance clocks/u_pll_adv_125. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT3: <TIMESPEC TS_clocks_calib_clk_bufg_in = PERIOD
+   "clocks_calib_clk_bufg_in" TS_SYSCLK_P / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_SYSCLK_P', was traced into PLL_ADV instance clocks/u_pll_adv_125. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clocks_xclk125_tx = PERIOD "clocks_xclk125_tx"
+   TS_SYSCLK_P / 0.625 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_SYSCLK_P', was traced into PLL_ADV instance clocks/u_pll_adv_125. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT4: <TIMESPEC TS_clocks_proc_clk_bufg_in = PERIOD
+   "clocks_proc_clk_bufg_in" TS_SYSCLK_P / 0.3125 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_SYSCLK_P', was traced into PLL_ADV instance clocks/u_pll_adv_125. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_clocks_clk20_bufg_in = PERIOD "clocks_clk20_bufg_in"
+   TS_SYSCLK_P / 0.05 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_SYSCLK_P', was traced into PLL_ADV instance clocks/u_pll_adv. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_mcbclk_2x_180 = PERIOD "mcbclk_2x_180" TS_SYSCLK_P /
+   3.125 PHASE 0.8 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_SYSCLK_P', was traced into PLL_ADV instance clocks/u_pll_adv. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_mcbclk_2x_0 = PERIOD "mcbclk_2x_0" TS_SYSCLK_P / 3.125
+   HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'PHY_RXCLK', used in period specification
+   'TS_PHY_RXCLK', was traced into BUFIO2 instance clocks/bufio_gmii_rx_clk. The
+   following new TNM groups and period specifications were generated at the
+   BUFIO2 output(s): 
+   IOCLK: <TIMESPEC TS_clk125_rx_bufio = PERIOD "clk125_rx_bufio" TS_PHY_RXCLK
+   HIGH 50%>
+
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive 'mac/eth_ctrl/cpu/read_strobe_flop' has
+   unconnected output pin
+WARNING:NgdBuild:452 - logical net 'N512' has no driver
+WARNING:NgdBuild:452 - logical net 'N514' has no driver
+WARNING:NgdBuild:470 - bidirect pad net 'FPGA_ONCHIP_TERM1' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'FPGA_ONCHIP_TERM2' has no legal driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   7
+
+Total memory usage is 102668 kilobytes
+
+Writing NGD file "SP601_BRD.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
+
+Writing NGDBUILD log file "SP601_BRD.bld"...
