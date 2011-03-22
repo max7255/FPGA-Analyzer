@@ -1,5 +1,0 @@
-verilog work "crc32_8.v"
-verilog work "ETH_TX_CRC.v"
-verilog work "ETH_RX_CRC.v"
-verilog work "ETH_RX_PKT_BUF_2048_STREAM.v"
-verilog work "C:/Xilinx/12.4/ISE_DS/ISE//verilog/src/glbl.v"
